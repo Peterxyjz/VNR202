@@ -1,0 +1,83 @@
+{
+  "cong-nghiep-hoa": {
+    "slug": "cong-nghiep-hoa",
+    "title": "Dòng chảy Công nghiệp hóa, Hiện đại hóa",
+    "description": "Theo dõi tư duy của Đảng về CNH, HĐH từ Cương lĩnh 1991, qua bước ngoặt 1996, đến mục tiêu 2045.",
+    "timeline": [
+      {
+        "daiHoiId": "VII",
+        "time": "1991",
+        "snippet": "Lần đầu tiên khái niệm 'công nghiệp hoá theo hướng hiện đại' được nêu chính thức trong Cương lĩnh 1991, mở ra tư duy mới."
+      },
+      {
+        "daiHoiId": "VIII",
+        "time": "1996",
+        "snippet": "Đánh dấu bước ngoặt, đưa đất nước sang thời kỳ mới: đẩy mạnh CNH, HĐH, sau khi khẳng định đã ra khỏi khủng hoảng KT-XH."
+      },
+      {
+        "daiHoiId": "IX",
+        "time": "2001",
+        "snippet": "Xác định mục tiêu 2020 cơ bản trở thành nước công nghiệp theo hướng hiện đại, định hình rõ mô hình kinh tế tổng quát."
+      },
+      {
+        "daiHoiId": "X",
+        "time": "2006",
+        "snippet": "Đẩy mạnh CNH, HĐH gắn liền với 'phát triển kinh tế tri thức', một bước phát triển tư duy mới."
+      },
+      {
+        "daiHoiId": "XIII",
+        "time": "2021",
+        "snippet": "Gắn liền mục tiêu CNH, HĐH với 'chuyển đổi số quốc gia', 'đổi mới sáng tạo' và 'phát triển bền vững'."
+      }
+    ]
+  },
+  "kinh-te-thi-truong": {
+    "slug": "kinh-te-thi-truong",
+    "title": "Phát triển Kinh tế thị trường & Kinh tế Tư nhân",
+    "description": "Hành trình từ 'kinh tế hàng hóa nhiều thành phần' đến 'mô hình tổng quát' và vai trò 'động lực' của kinh tế tư nhân.",
+    "timeline": [
+      {
+        "daiHoiId": "VII",
+        "time": "1991",
+        "snippet": "Phát triển 'kinh tế hàng hoá nhiều thành phần' theo định hướng XHCN, vận hành theo cơ chế thị trường có sự quản lý của Nhà nước."
+      },
+      {
+        "daiHoiId": "IX",
+        "time": "2001",
+        "snippet": "Khẳng định 'kinh tế thị trường định hướng XHCN' là mô hình kinh tế tổng quát của đất nước trong thời kỳ quá độ."
+      },
+      {
+        "daiHoiId": "IX",
+        "time": "2002 (TW 5)",
+        "snippet": "Hội nghị TW 5 (khóa IX) lần đầu nhận thức 'kinh tế tư nhân là bộ phận cấu thành quan trọng' và là 'vấn đề chiến lược lâu dài'."
+      },
+      {
+        "daiHoiId": "XII",
+        "time": "2016",
+        "snippet": "Một bước đột phá: Văn kiện ĐH XII và NQ TW 5 (2017) khẳng định kinh tế tư nhân là 'một động lực quan trọng' của nền kinh tế."
+      }
+    ]
+  },
+  "xay-dung-dang": {
+    "slug": "xay-dung-dang",
+    "title": "Xây dựng, Chỉnh đốn Đảng",
+    "description": "Cuộc đấu tranh liên tục chống suy thoái tư tưởng, đạo đức, 'tự diễn biến', 'tự chuyển hóa' trong nội bộ.",
+    "timeline": [
+      {
+        "daiHoiId": "XI",
+        "time": "2012 (TW 4)",
+        "snippet": "Ban hành Nghị quyết TW 4 'Một số vấn đề cấp bách về xây dựng Đảng hiện nay', chỉ rõ 3 vấn đề cấp bách, trọng tâm là ngăn chặn suy thoái tư tưởng, đạo đức."
+      },
+      {
+        "daiHoiId": "XII",
+        "time": "2016 (TW 4)",
+        "snippet": "Nghị quyết TW 4 (khóa XII) nhận diện 27 biểu hiện suy thoái về tư tưởng chính trị, đạo đức, lối sống, 'tự diễn biến', 'tự chuyển hóa' trong nội bộ."
+      },
+      {
+        "daiHoiId": "XIII",
+        "time": "2021 (TW 4)",
+        "snippet": "Nhiệm vụ trọng tâm số 1. Mở rộng phạm vi: Xây dựng, chỉnh đốn Đảng *và hệ thống chính trị* trong sạch, vững mạnh."
+      }
+    ]
+  }
+}

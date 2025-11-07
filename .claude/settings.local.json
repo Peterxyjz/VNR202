@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npx prisma:*)"
+      "Bash(npx prisma:*)",
+      "Bash(\"D:\\idle\\ChinhTri\\vnr202\\src\\app\\quiz\\[id]\\page.tsx\")",
+      "Bash(\"D:\\idle\\ChinhTri\\vnr202\\src\\app\\forum\\ask\\page.tsx\")",
+      "Bash(\"D:\\idle\\ChinhTri\\vnr202\\src\\app\\gioi-thieu\\page.tsx\")",
+      "Bash(\"D:\\idle\\ChinhTri\\vnr202\\src\\app\\dong-chay-chu-de\\[slug]\\page.tsx\")",
+      "Bash(pnpm build:*)"
     ],
     "deny": [],
     "ask": []

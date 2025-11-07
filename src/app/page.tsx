@@ -34,7 +34,7 @@ export default function Home() {
           {/* Timeline Cards Container */}
           <div className="overflow-x-auto pb-8">
             <div className="flex gap-8 px-4 md:px-8 min-w-max">
-              {daiHoiList.map((daiHoi, index) => (
+              {daiHoiList.map((daiHoi) => (
                 <Link
                   key={daiHoi.id}
                   href={`/dai-hoi/${daiHoi.id}`}
