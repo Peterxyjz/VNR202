@@ -216,10 +216,24 @@ export default async function DaiHoiDetailPage({
                   controls
                   className="w-full rounded-lg"
                   poster={daiHoi.heroImage}
+                  crossOrigin="anonymous"
                 >
                   <source src={daiHoi.media.videoUrl} type="video/mp4" />
                   Trình duyệt của bạn không hỗ trợ video.
                 </video>
+
+                {/* Helpful fallback / debug link if the video doesn't play in the embedded player */}
+                <div className="mt-2 text-sm text-gray-600">
+                  Nếu video không phát được, bạn có thể mở trực tiếp:
+                  <a
+                    href={daiHoi.media.videoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="ml-2 text-red-600 underline"
+                  >
+                    Mở video trong tab mới
+                  </a>
+                </div>
               </div>
             )}
 
