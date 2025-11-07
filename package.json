@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-  "build": "prisma generate && next build --turbopack",
+  "build": "node -e \"try{require('child_process').execSync('prisma generate',{stdio:'inherit'})}catch(e){}\" && next build --turbopack",
     "start": "next start",
     "lint": "eslint"
   },

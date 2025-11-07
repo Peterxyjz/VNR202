@@ -15,7 +15,7 @@ type AnswerWithReactions = {
   reactions: { id: string; emoji: string; guestId: string }[];
 };
 
-type ReactionType = { id: string; emoji: string; guestId: string };
+
 
 export const revalidate = 10; // Revalidate every 10 seconds
 
