@@ -1,8 +1,8 @@
 "use client";
 
 import { useRef } from "react";
-import { useGuest } from "@/app/hooks/useGuest";
-import { createAnswer } from "@/app/lib/actions";
+import { useGuest } from "@/hooks/useGuest";
+import { createAnswer } from "@/lib/actions";
 import { useFormStatus } from "react-dom";
 
 function SubmitButton() {

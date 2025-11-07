@@ -1,5 +1,5 @@
 import Link from "next/link";
-import QuestionForm from "@/app/components/QuestionForm";
+import QuestionForm from "@/components/QuestionForm";
 
 export const metadata = {
   title: "Đặt câu hỏi mới | Forum Q&A",
@@ -16,8 +16,18 @@ export default function AskQuestionPage() {
             href="/forum"
             className="inline-flex items-center text-red-600 hover:text-red-700 mb-4 transition-colors"
           >
-            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            <svg
+              className="w-5 h-5 mr-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 19l-7-7 7-7"
+              />
             </svg>
             Quay lại forum
           </Link>
@@ -25,9 +35,7 @@ export default function AskQuestionPage() {
           <h1 className="text-4xl font-bold text-red-800 mb-2">
             Đặt câu hỏi mới
           </h1>
-          <p className="text-gray-700">
-            Chia sẻ câu hỏi của bạn với cộng đồng
-          </p>
+          <p className="text-gray-700">Chia sẻ câu hỏi của bạn với cộng đồng</p>
         </div>
 
         {/* Form Card */}
@@ -38,7 +46,12 @@ export default function AskQuestionPage() {
         {/* Guidelines */}
         <div className="mt-6 bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
           <h3 className="font-bold text-blue-900 mb-2 flex items-center">
-            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg
+              className="w-5 h-5 mr-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"

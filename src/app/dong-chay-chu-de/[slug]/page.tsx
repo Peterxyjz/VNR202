@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getThemeSlugs, getThemeBySlug } from "@/app/lib/data-loaders";
+import { getThemeSlugs, getThemeBySlug } from "@/lib/data-loaders";
 
 // Generate static params for SSG
 export async function generateStaticParams() {
@@ -11,7 +11,11 @@ export async function generateStaticParams() {
 }
 
 // Generate metadata
-export async function generateMetadata({ params }: { params: { slug: string } }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}) {
   const theme = getThemeBySlug(params.slug);
 
   if (!theme) {
@@ -26,7 +30,11 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-export default function ThemeDetailPage({ params }: { params: { slug: string } }) {
+export default function ThemeDetailPage({
+  params,
+}: {
+  params: { slug: string };
+}) {
   const theme = getThemeBySlug(params.slug);
 
   if (!theme) {
@@ -42,8 +50,18 @@ export default function ThemeDetailPage({ params }: { params: { slug: string } }
             href="/dong-chay-chu-de"
             className="inline-flex items-center text-red-600 hover:text-red-700 mb-6 transition-colors"
           >
-            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            <svg
+              className="w-5 h-5 mr-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 19l-7-7 7-7"
+              />
             </svg>
             Quay lại danh sách chủ đề
           </Link>
@@ -71,9 +89,7 @@ export default function ThemeDetailPage({ params }: { params: { slug: string } }
                 <h1 className="text-3xl md:text-4xl font-bold mb-3">
                   {theme.title}
                 </h1>
-                <p className="text-lg text-red-100">
-                  {theme.description}
-                </p>
+                <p className="text-lg text-red-100">{theme.description}</p>
               </div>
             </div>
           </div>
@@ -90,7 +106,9 @@ export default function ThemeDetailPage({ params }: { params: { slug: string } }
               <div key={index} className="relative">
                 {/* Timeline Dot */}
                 <div className="absolute left-8 w-8 h-8 bg-red-600 rounded-full border-4 border-white shadow-lg hidden md:flex items-center justify-center transform -translate-x-1/2 z-10">
-                  <span className="text-white text-xs font-bold">{index + 1}</span>
+                  <span className="text-white text-xs font-bold">
+                    {index + 1}
+                  </span>
                 </div>
 
                 {/* Content Card */}
@@ -170,9 +188,10 @@ export default function ThemeDetailPage({ params }: { params: { slug: string } }
             Tổng kết
           </h3>
           <p className="text-gray-700 leading-relaxed">
-            Qua {theme.timeline.length} mốc lịch sử quan trọng, chủ đề &ldquo;{theme.title}&rdquo; cho thấy
-            sự phát triển liên tục và nhất quán trong tư duy của Đảng. Mỗi kỳ Đại hội đều kế thừa,
-            phát triển và làm sâu sắc thêm những định hướng từ các kỳ trước, thể hiện tính kế thừa
+            Qua {theme.timeline.length} mốc lịch sử quan trọng, chủ đề &ldquo;
+            {theme.title}&rdquo; cho thấy sự phát triển liên tục và nhất quán
+            trong tư duy của Đảng. Mỗi kỳ Đại hội đều kế thừa, phát triển và làm
+            sâu sắc thêm những định hướng từ các kỳ trước, thể hiện tính kế thừa
             và sáng tạo trong xây dựng đất nước.
           </p>
         </div>

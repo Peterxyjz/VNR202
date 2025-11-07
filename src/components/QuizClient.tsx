@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { QuizQuestion } from "@/app/lib/data-loaders";
+import { QuizQuestion } from "@/lib/data-loaders";
 import Link from "next/link";
 
 interface QuizClientProps {

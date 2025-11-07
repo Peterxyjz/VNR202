@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai";
-import { knowledgeBase, systemPrompt } from "../../lib/knowledge-base";
+import { knowledgeBase, systemPrompt } from "@/lib/knowledge-base";
 
 interface Message {
   role: "user" | "assistant";

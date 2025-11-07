@@ -1,8 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getDaiHoiIds, getDaiHoiById } from "@/app/lib/data-loaders";
+import { getDaiHoiIds, getDaiHoiById } from "@/lib/data-loaders";
 
-// Generate static params for all �i h�i pages (SSG)
 export async function generateStaticParams() {
   const ids = getDaiHoiIds();
   return ids.map((id) => ({
@@ -187,7 +186,7 @@ export default async function DaiHoiDetailPage({
         {/* Significance Section */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold text-red-800 mb-6 flex items-center">
-            <span className="w-2 h-8 bg-red-600 mr-4"></span>� ngh)a l�ch s�
+            <span className="w-2 h-8 bg-red-600 mr-4"></span>Ý nghĩa lịch sử
           </h2>
           <div className="bg-gradient-to-r from-red-100 to-red-50 rounded-lg shadow-md p-6 border-l-4 border-red-600">
             {daiHoi.significance.map((paragraph, index) => (

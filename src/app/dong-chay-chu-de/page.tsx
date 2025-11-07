@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getAllThemes } from "@/app/lib/data-loaders";
+import { getAllThemes } from "@/lib/data-loaders";
 
 export const metadata = {
   title: "Dòng chảy Chủ đề | Hành trình Đổi Mới",
@@ -18,8 +18,10 @@ export default function ThemesIndexPage() {
             Dòng chảy Chủ đề
           </h1>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            Khám phá sự phát triển liên tục của các chủ đề quan trọng xuyên suốt các kỳ Đại hội Đảng.
-            Mỗi chủ đề là một &ldquo;dòng chảy&rdquo; tư tưởng, chính sách, định hướng được thể hiện qua các giai đoạn lịch sử.
+            Khám phá sự phát triển liên tục của các chủ đề quan trọng xuyên suốt
+            các kỳ Đại hội Đảng. Mỗi chủ đề là một &ldquo;dòng chảy&rdquo; tư
+            tưởng, chính sách, định hướng được thể hiện qua các giai đoạn lịch
+            sử.
           </p>
         </div>
 
@@ -29,8 +31,18 @@ export default function ThemesIndexPage() {
             href="/"
             className="inline-flex items-center text-red-600 hover:text-red-700 transition-colors"
           >
-            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            <svg
+              className="w-5 h-5 mr-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 19l-7-7 7-7"
+              />
             </svg>
             Quay lại trang chủ
           </Link>
@@ -112,8 +124,9 @@ export default function ThemesIndexPage() {
             Về Dòng chảy Chủ đề
           </h3>
           <p className="text-sm text-gray-700">
-            Mỗi &ldquo;Dòng chảy&rdquo; thể hiện sự phát triển liên tục của một chủ đề quan trọng qua các kỳ Đại hội.
-            Bạn sẽ thấy được sự kế thừa, phát triển và đổi mới tư duy của Đảng qua từng giai đoạn lịch sử.
+            Mỗi &ldquo;Dòng chảy&rdquo; thể hiện sự phát triển liên tục của một
+            chủ đề quan trọng qua các kỳ Đại hội. Bạn sẽ thấy được sự kế thừa,
+            phát triển và đổi mới tư duy của Đảng qua từng giai đoạn lịch sử.
           </p>
         </div>
       </div>

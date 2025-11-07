@@ -1,8 +1,8 @@
 "use client";
 
 import { useState, useTransition } from "react";
-import { useGuest } from "@/app/hooks/useGuest";
-import { toggleReaction } from "@/app/lib/actions";
+import { useGuest } from "@/hooks/useGuest";
+import { toggleReaction } from "@/lib/actions";
 
 interface Reaction {
   id: string;
@@ -50,7 +50,9 @@ export default function ReactionButtons({
 
     if (hasReacted) {
       // Remove reaction
-      setReactions(reactions.filter((r) => !(r.emoji === emoji && r.guestId === guestId)));
+      setReactions(
+        reactions.filter((r) => !(r.emoji === emoji && r.guestId === guestId))
+      );
     } else {
       // Add reaction
       setReactions([
@@ -102,7 +104,9 @@ export default function ReactionButtons({
             title={label}
           >
             <span className="text-lg">{emoji}</span>
-            {count > 0 && <span className="text-sm font-semibold">{count}</span>}
+            {count > 0 && (
+              <span className="text-sm font-semibold">{count}</span>
+            )}
           </button>
         );
       })}

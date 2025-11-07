@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { prisma } from "@/app/lib/prisma";
-import ReactionButtons from "@/app/components/ReactionButtons";
-import AnswerForm from "@/app/components/AnswerForm";
+import { prisma } from "@/lib/prisma";
+import ReactionButtons from "@/components/ReactionButtons";
+import AnswerForm from "@/components/AnswerForm";
 
 // Local (minimal) types to avoid relying on generated Prisma types at build time.
 // This prevents build failures when the Prisma client types are not available

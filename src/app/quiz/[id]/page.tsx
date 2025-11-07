@@ -1,7 +1,11 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getQuizByDaiHoiId, getQuizDaiHoiIds, getDaiHoiById } from "@/app/lib/data-loaders";
-import QuizClient from "@/app/components/QuizClient";
+import {
+  getQuizByDaiHoiId,
+  getQuizDaiHoiIds,
+  getDaiHoiById,
+} from "@/lib/data-loaders";
+import QuizClient from "@/components/QuizClient";
 
 // Generate static params for SSG
 export async function generateStaticParams() {
@@ -44,8 +48,18 @@ export default function QuizDetailPage({ params }: { params: { id: string } }) {
             href="/quiz"
             className="inline-flex items-center text-red-600 hover:text-red-700 mb-4 transition-colors"
           >
-            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            <svg
+              className="w-5 h-5 mr-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 19l-7-7 7-7"
+              />
             </svg>
             Quay lại danh sách quiz
           </Link>
@@ -59,7 +73,12 @@ export default function QuizDetailPage({ params }: { params: { id: string } }) {
             </h1>
             <div className="flex flex-wrap gap-4 text-sm">
               <div className="flex items-center">
-                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg
+                  className="w-4 h-4 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -70,7 +89,12 @@ export default function QuizDetailPage({ params }: { params: { id: string } }) {
                 <span>{quizData.Questions.length} câu hỏi</span>
               </div>
               <div className="flex items-center">
-                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg
+                  className="w-4 h-4 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"

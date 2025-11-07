@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getQuizData, getDaiHoiById } from "@/app/lib/data-loaders";
+import { getQuizData, getDaiHoiById } from "@/lib/data-loaders";
 
 export const metadata = {
   title: "Quiz - Kiểm tra kiến thức | Hành trình Đổi Mới",
@@ -18,7 +18,8 @@ export default function QuizIndexPage() {
             Kiểm tra kiến thức
           </h1>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            Chọn một Đại hội để bắt đầu làm bài quiz và kiểm tra sự hiểu biết của bạn
+            Chọn một Đại hội để bắt đầu làm bài quiz và kiểm tra sự hiểu biết
+            của bạn
           </p>
         </div>
 
@@ -49,11 +50,13 @@ export default function QuizIndexPage() {
                   <div className="space-y-2 text-gray-600 text-sm mb-4">
                     {daiHoiInfo && (
                       <p>
-                        <span className="font-semibold">Thời gian:</span> {daiHoiInfo.time}
+                        <span className="font-semibold">Thời gian:</span>{" "}
+                        {daiHoiInfo.time}
                       </p>
                     )}
                     <p>
-                      <span className="font-semibold">Số câu hỏi:</span> {questionCount} câu
+                      <span className="font-semibold">Số câu hỏi:</span>{" "}
+                      {questionCount} câu
                     </p>
                   </div>
 

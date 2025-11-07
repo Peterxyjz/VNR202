@@ -156,11 +156,6 @@ export default function GioiThieuPage() {
             </div>
           </div>
         </div>
-
-        {/* Footer */}
-        <div className="text-center text-gray-600">
-          <p className="mt-2">© 2025 Hành trình Đổi Mới</p>
-        </div>
       </div>
     </div>
   );
