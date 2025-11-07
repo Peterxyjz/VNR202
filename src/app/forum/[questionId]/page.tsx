@@ -15,8 +15,6 @@ type AnswerWithReactions = {
   reactions: { id: string; emoji: string; guestId: string }[];
 };
 
-
-
 export const revalidate = 10; // Revalidate every 10 seconds
 
 export async function generateMetadata({
@@ -168,67 +166,63 @@ export default async function QuestionDetailPage({
             </div>
           ) : (
             <div className="space-y-4">
-              {question.answers.map(
-                (answer: AnswerWithReactions) => (
-                  <div
-                    key={answer.id}
-                    className="bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-400"
-                  >
-                    {/* Answer Content */}
-                    <div className="text-gray-700 leading-relaxed mb-4 whitespace-pre-wrap">
-                      {answer.content}
-                    </div>
-
-                    {/* Answer Meta */}
-                    <div className="flex items-center gap-4 text-sm text-gray-500 mb-4 pb-4 border-b">
-                      <div className="flex items-center gap-1">
-                        <svg
-                          className="w-4 h-4"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                          />
-                        </svg>
-                        <span>{answer.guestName}</span>
-                      </div>
-
-                      <div className="flex items-center gap-1">
-                        <svg
-                          className="w-4 h-4"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                          />
-                        </svg>
-                        <span>
-                          {new Date(answer.createdAt).toLocaleDateString(
-                            "vi-VN"
-                          )}
-                        </span>
-                      </div>
-                    </div>
-
-                    {/* Answer Reactions */}
-                    <ReactionButtons
-                      targetId={answer.id}
-                      targetType="answer"
-                      initialReactions={answer.reactions}
-                    />
+              {question.answers.map((answer: AnswerWithReactions) => (
+                <div
+                  key={answer.id}
+                  className="bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-400"
+                >
+                  {/* Answer Content */}
+                  <div className="text-gray-700 leading-relaxed mb-4 whitespace-pre-wrap">
+                    {answer.content}
                   </div>
-                )
-              )}
+
+                  {/* Answer Meta */}
+                  <div className="flex items-center gap-4 text-sm text-gray-500 mb-4 pb-4 border-b">
+                    <div className="flex items-center gap-1">
+                      <svg
+                        className="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                        />
+                      </svg>
+                      <span>{answer.guestName}</span>
+                    </div>
+
+                    <div className="flex items-center gap-1">
+                      <svg
+                        className="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                      <span>
+                        {new Date(answer.createdAt).toLocaleDateString("vi-VN")}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Answer Reactions */}
+                  <ReactionButtons
+                    targetId={answer.id}
+                    targetType="answer"
+                    initialReactions={answer.reactions}
+                  />
+                </div>
+              ))}
             </div>
           )}
         </div>

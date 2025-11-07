@@ -4,12 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-  "build": "node -e \"try{require('child_process').execSync('prisma generate',{stdio:'inherit'})}catch(e){}\" && next build --turbopack",
+    "build": "node -e \"try{require('child_process').execSync('prisma generate',{stdio:'inherit'})}catch(e){}\" && next build --turbopack",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
     "@prisma/client": "^6.19.0",
+    "@google/generative-ai": "^0.24.1",
     "next": "15.5.6",
     "react": "19.1.0",
     "react-dom": "19.1.0",
