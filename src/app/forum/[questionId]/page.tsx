@@ -2,8 +2,20 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { prisma } from "@/app/lib/prisma";
 import ReactionButtons from "@/app/components/ReactionButtons";
-import type { Answer, Reaction } from "@prisma/client";
 import AnswerForm from "@/app/components/AnswerForm";
+
+// Local (minimal) types to avoid relying on generated Prisma types at build time.
+// This prevents build failures when the Prisma client types are not available
+// during the deployment build (for example, if postinstall scripts are disabled).
+type AnswerWithReactions = {
+  id: string;
+  content: string;
+  guestName: string;
+  createdAt: Date | string;
+  reactions: { id: string; emoji: string; guestId: string }[];
+};
+
+type ReactionType = { id: string; emoji: string; guestId: string };
 
 export const revalidate = 10; // Revalidate every 10 seconds
 
@@ -157,7 +169,7 @@ export default async function QuestionDetailPage({
           ) : (
             <div className="space-y-4">
               {question.answers.map(
-                (answer: Answer & { reactions: Reaction[] }) => (
+                (answer: AnswerWithReactions) => (
                   <div
                     key={answer.id}
                     className="bg-white rounded-lg shadow-md p-6 border-l-4 border-blue-400"
