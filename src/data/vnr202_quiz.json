@@ -1,0 +1,877 @@
+[
+  {
+    "DaiHoi": "VII",
+    "Questions": [
+      {
+        "QuestionNumber": 1,
+        "Question": "Sau 5 năm thực hiện đường lối đổi mới của Đại hội VI (1986), đất nước ta đã đạt được thành tựu nổi bật nào?",
+        "Options": {
+          "A": "Đất nước hoàn toàn thoát khỏi khủng hoảng kinh tế",
+          "B": "Nền kinh tế dần thoát khỏi khủng hoảng, sản xuất tăng trưởng, đời sống nhân dân được cải thiện",
+          "C": "Đã trở thành nước công nghiệp hiện đại",
+          "D": "Lạm phát và thất nghiệp được xóa bỏ hoàn toàn"
+        },
+        "CorrectAnswer": "B",
+        "SourceText": "Trích: \"Sau năm năm thực hiện đường lối đổi mới do Đại hội VI của Đảng (1986) đề ra, đất nước ta đã đạt được những kết quả bước đầu quan trọng. Nền kinh tế dần thoát khỏi khủng hoảng từng phần, sản xuất có bước tăng trưởng, hàng hóa lưu thông tốt hơn, đời sống nhân dân được cải thiện.\""
+      },
+      {
+        "QuestionNumber": 2,
+        "Question": "Sau 5 năm đổi mới, khó khăn lớn nhất của nền kinh tế – xã hội Việt Nam là gì?",
+        "Options": {
+          "A": "Thiếu tài nguyên thiên nhiên",
+          "B": "Kinh tế chưa ổn định, lạm phát cao, cơ cấu sản xuất chậm đổi mới",
+          "C": "Nông nghiệp phát triển quá nhanh",
+          "D": "Không có cơ chế quản lý kinh tế"
+        },
+        "CorrectAnswer": "B",
+        "SourceText": "Trích: \"Tuy nhiên, bên cạnh những thành tựu đạt được, tình hình kinh tế – xã hội nước ta vẫn còn nhiều khó khăn, hạn chế. Nền kinh tế chưa thật sự ổn định, tốc độ lạm phát còn cao, cơ cấu sản xuất chậm đổi mới…”"
+      },
+      {
+        "QuestionNumber": 3,
+        "Question": "Điểm mới nổi bật của Đại hội VII của Đảng (1991) là gì?",
+        "Options": {
+          "A": "Đề ra chủ trương đổi mới toàn diện đất nước",
+          "B": "Lần đầu tiên nhấn mạnh vai trò của kinh tế tư nhân",
+          "C": "Thông qua Cương lĩnh 1991 và Chiến lược ổn định và phát triển kinh tế – xã hội đến năm 2000",
+          "D": "Quyết định gia nhập ASEAN"
+        },
+        "CorrectAnswer": "C",
+        "SourceText": "Trích: “Điểm mới nổi bật của Đại hội VII là thông qua hai văn kiện quan trọng: Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên chủ nghĩa xã hội (1991) và Chiến lược, ổn định và phát triển kinh tế – xã hội đến năm 2000.\""
+      },
+      {
+        "QuestionNumber": 4,
+        "Question": "Cương lĩnh năm 1991 được Đại hội VII thông qua gồm mấy phần?",
+        "Options": {
+          "A": "3 phần",
+          "B": "4 phần",
+          "C": "5 phần",
+          "D": "6 phần"
+        },
+        "CorrectAnswer": "B",
+        "SourceText": "Trích: \"Cương lĩnh 1991 gồm 4 phần: Quá trình cách mạng và những bài học kinh nghiệm; Quá độ lên chủ nghĩa xã hội ở nước ta; Những định hướng lớn về chính sách kinh tế, xã hội, quốc phòng - an ninh, đối ngoại; Hệ thống chính trị và vai trò lãnh đạo của đảng.\""
+      },
+      {
+        "QuestionNumber": 5,
+        "Question": "Cương lĩnh 1991 đã nêu ra bao nhiêu phương hướng lớn xây dựng chủ nghĩa xã hội?",
+        "Options": {
+          "A": "5 phương hướng",
+          "B": "6 phương hướng",
+          "C": "7 phương hướng",
+          "D": "8 phương hướng"
+        },
+        "CorrectAnswer": "C",
+        "SourceText": "Trích: \"Cương lĩnh nêu ra 7 phương hướng lớn xây dựng chủ nghĩa xã hội.”"
+      },
+      {
+        "QuestionNumber": 6,
+        "Question": "Theo Cương lĩnh 1991, nhiệm vụ trung tâm trong quá trình xây dựng chủ nghĩa xã hội là gì?",
+        "Options": {
+          "A": "Phát triển nông nghiệp hiện đại hóa",
+          "B": "Phát triển lực lượng sản xuất, công nghiệp hoá đất nước theo hướng hiện đại, gắn với nông nghiệp toàn diện",
+          "C": "Tăng cường quốc phòng – an ninh",
+          "D": "Mở rộng quan hệ đối ngoại"
+        },
+        "CorrectAnswer": "B",
+        "SourceText": "Trích: “Một trong các phương hướng đó là 'Phát triển lực lượng sản xuất, công nghiệp hóa đất nước theo hướng hiện đại, gắn với nông nghiệp toàn diện' là nhiệm vụ trung tâm'.\""
+      },
+      {
+        "QuestionNumber": 7,
+        "Question": "Đại hội nào và văn kiện nào của Đảng lần đầu tiên nêu chính thức khái niệm “công nghiệp hoá theo hướng hiện đại”?",
+        "Options": {
+          "A": "Cương lĩnh năm 1991, Đại hội VII",
+          "B": "Đại hội VI (1986)",
+          "C": "Nghị quyết Trung ương 6 (1989)",
+          "D": "Đại hội VIII (1996)"
+        },
+        "CorrectAnswer": "A",
+        "SourceText": "Trích: “Đây là lần đầu tiên khái niệm 'công nghiệp hoá được nêu chính thức trong Cương lĩnh của Đảng và đi kèm với cụm theo hướng hiện đại.\""
+      },
+      {
+        "QuestionNumber": 8,
+        "Question": "Hội nghị Trung ương 7 khóa VII (năm 1994) đã ra Nghị quyết về vấn đề gì?",
+        "Options": {
+          "A": "Phát triển nông nghiệp bền vững",
+          "B": "Phát triển công nghiệp, công nghệ theo hướng công nghiệp hoá, hiện đại hoá đất nước",
+          "C": "Cải cách giáo dục và y tế",
+          "D": "Mở rộng hợp tác quốc tế"
+        },
+        "CorrectAnswer": "B",
+        "SourceText": "Trích: “Hội nghị Trung ương 7 khóa VII (30/7/1994)... về phát triển công nghiệp, công nghệ đến năm 2000 theo hướng công nghiệp hoá, hiện đại hoá đất nước và xây dựng giai cấp công nhân trong giai đoạn mới.\""
+      },
+      {
+        "QuestionNumber": 9,
+        "Question": "Mục tiêu lâu dài của công nghiệp hoá, hiện đại hoá ở nước ta là gì?",
+        "Options": {
+          "A": "Xây dựng xã hội nông nghiệp hiện đại",
+          "B": "Trở thành nước công nghiệp có cơ sở vật chất – kỹ thuật hiện đại, dân giàu, nước mạnh, xã hội công bằng, văn minh",
+          "C": "Phát triển dịch vụ và thương mại tự do",
+          "D": "Đạt tốc độ tăng trưởng kinh tế 10%/năm"
+        },
+        "CorrectAnswer": "B",
+        "SourceText": "Trích: “Mục tiêu lâu dài của công nghiệp hoá, hiện đại hoá là cải biến nước ta thành một nước công nghiệp có cơ sở vật chất – kỹ thuật hiện đại, có cơ cấu kinh tế hợp lý, quan hệ sản xuất tiến bộ...\""
+      },
+      {
+        "QuestionNumber": 10,
+        "Question": "Giai đoạn thực hiện Cương lĩnh 1991 và Nghị quyết Trung ương 7 khóa VII có ý nghĩa như thế nào đối với công cuộc công nghiệp hoá, hiện đại hoá đất nước?",
+        "Options": {
+          "A": "Kết thúc thời kỳ đổi mới",
+          "B": "Là nền tảng để bước vào thời kỳ đẩy mạnh công nghiệp hoá, hiện đại hoá đất nước",
+          "C": "Là giai đoạn ổn định xã hội sau chiến tranh",
+          "D": "Là thời kỳ phát triển kinh tế tự do hóa hoàn toàn"
+        },
+        "CorrectAnswer": "B",
+        "SourceText": "Trích: “Giai đoạn này đã đặt nền móng quan trọng để chuyển đất nước sang thời kỳ đẩy mạnh CNH, HĐH, chuẩn bị điều kiện để Đại hội VIII (1996) đề ra chiến lược phát triển mới.\""
+      }
+    ]
+  },
+  {
+    "DaiHoi": "XI",
+    "Questions": [
+      {
+        "QuestionNumber": 1,
+        "Question": "Đại hội đại biểu toàn quốc lần thứ XI của Đảng Cộng sản Việt Nam họp tại Hà Nội vào thời gian nào?",
+        "Options": {
+          "A": "10-15/01/2011",
+          "B": "12-19/01/2011",
+          "C": "15-20/01/2011",
+          "D": "19-25/01/2011"
+        },
+        "CorrectAnswer": "B",
+        "SourceText": "Trích: \"Đại hội XI của Đảng họp tại Hà Nội từ ngày 12 đến ngày 19-1-2011, trong bối cảnh tình hình thế giới tiếp tục diễn biến phức tạp.\""
+      },
+      {
+        "QuestionNumber": 2,
+        "Question": "Ai được bầu làm Tổng Bí thư tại Đại hội XI của Đảng?",
+        "Options": {
+          "A": "Nông Đức Mạnh",
+          "B": "Nguyễn Tấn Dũng",
+          "C": "Nguyễn Phú Trọng",
+          "D": "Trương Tấn Sang"
+        },
+        "CorrectAnswer": "C",
+        "SourceText": "Trích: “Đại hội đã bầu ra Ban Chấp hành Trung ương gồm 60 ủy viên chính thức... đồng chí Nguyễn Phú Trọng được bầu làm Tổng Bí thư của Đảng.\""
+      },
+      {
+        "QuestionNumber": 3,
+        "Question": "Nội dung nổi bật nhất của Đại hội XI là gì?",
+        "Options": {
+          "A": "Thông qua Hiến pháp sửa đổi năm 2011",
+          "B": "Thông qua Cương lĩnh 2011 và Chiến lược phát triển kinh tế – xã hội 2011-2020",
+          "C": "Đưa ra khái niệm “kinh tế tri thức lần đầu tiên",
+          "D": "Thông qua Nghị quyết về xây dựng Đảng"
+        },
+        "CorrectAnswer": "B",
+        "SourceText": "Trích: “Nội dung nổi bật của Đại hội XI là thông qua Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên chủ nghĩa xã hội (bổ sung, phát triển năm 2011) và Chiến lược phát triển kinh tế – xã hội 2011-2020.\""
+      },
+      {
+        "QuestionNumber": 4,
+        "Question": "Cương lĩnh năm 2011 được gọi đầy đủ là gì?",
+        "Options": {
+          "A": "Cương lĩnh xây dựng Đảng trong thời kỳ đổi mới",
+          "B": "Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên chủ nghĩa xã hội (bổ sung, phát triển năm 2011)",
+          "C": "Cương lĩnh phát triển kinh tế thị trường định hướng XHCN",
+          "D": "Cương lĩnh chính trị giai đoạn 2011-2020"
+        },
+        "CorrectAnswer": "B",
+        "SourceText": "Trích: “Cương lĩnh xây dựng đất nước trong thời kỳ quá độ lên chủ nghĩa xã hội (bổ sung, phát triển năm 2011), gọi tắt là Cương lĩnh năm 2011.\""
+      },
+      {
+        "QuestionNumber": 5,
+        "Question": "Cương lĩnh 2011 nêu rõ xã hội XHCN mà nhân dân ta xây dựng là xã hội như thế nào?",
+        "Options": {
+          "A": "Dân chủ, công bằng, văn minh, giàu mạnh",
+          "B": "Dân giàu, nước mạnh, dân chủ, công bằng, văn minh",
+          "C": "Hòa bình, thống nhất, tự do, hạnh phúc",
+          "D": "Độc lập, tự do, ấm no, hạnh phúc"
+        },
+        "CorrectAnswer": "B",
+        "SourceText": "Trích: “Cương lĩnh năm 2011 xác định xã hội xã hội chủ nghĩa mà nhân dân ta xây dựng là 'dân giàu, nước mạnh, dân chủ, công bằng, văn minh'...\""
+      },
+      {
+        "QuestionNumber": 6,
+        "Question": "Cương lĩnh năm 2011 bổ sung đặc trưng mới nào so với Cương lĩnh năm 1991?",
+        "Options": {
+          "A": "Kinh tế nhà nước giữ vai trò chủ đạo",
+          "B": "Nhà nước pháp quyền XHCN của nhân dân, do nhân dân, vì nhân dân",
+          "C": "Liên minh công – nông – trí thức",
+          "D": "Nền dân chủ nhân dân"
+        },
+        "CorrectAnswer": "B",
+        "SourceText": "Trích: Cương lĩnh 2011 bổ sung hai đặc trưng bao trùm: 'Dân giàu, nước mạnh, dân chủ, công bằng, văn minh' và 'Nhà nước pháp quyền xã hội chủ nghĩa của nhân dân, do nhân dân, vì nhân dân'...\""
+      },
+      {
+        "QuestionNumber": 7,
+        "Question": "Cương lĩnh 2011 xác định có bao nhiêu phương hướng cơ bản để xây dựng chủ nghĩa xã hội ở nước ta?",
+        "Options": {
+          "A": "6",
+          "B": "7",
+          "C": "8",
+          "D": "9"
+        },
+        "CorrectAnswer": "C",
+        "SourceText": "Trích: \"8 phương hướng cơ bản xây dựng chủ nghĩa xã hội ở nước ta: Một là, đẩy mạnh công nghiệp hoá... Tám là, xây dựng Đảng trong sạch, vững mạnh.\""
+      },
+      {
+        "QuestionNumber": 8,
+        "Question": "Theo Cương lĩnh 2011, giáo dục và đào tạo được xác định là gì?",
+        "Options": {
+          "A": "Nền tảng tinh thần của xã hội",
+          "B": "Quốc sách hàng đầu",
+          "C": "Một trong ba trụ cột phát triển",
+          "D": "Động lực chủ yếu của công nghiệp hóa"
+        },
+        "CorrectAnswer": "B",
+        "SourceText": "Trích: “Giáo dục và đào tạo là quốc sách hàng đầu, có sứ mệnh nâng cao dân trí, phát triển nhân lực, bồi dưỡng nhân tài...\""
+      },
+      {
+        "QuestionNumber": 9,
+        "Question": "Ba đột phá chiến lược trong Chiến lược phát triển kinh tế – xã hội 2011–2020 gồm những nội dung nào?",
+        "Options": {
+          "A": "Phát triển nguồn nhân lực; mở rộng thị trường; cải cách hành chính",
+          "B": "Hoàn thiện thể chế kinh tế thị trường; phát triển nhanh nguồn nhân lực; xây dựng kết cấu hạ tầng hiện đại",
+          "C": "Hội nhập quốc tế; tăng cường quốc phòng; cải cách tư pháp",
+          "D": "Đổi mới mô hình tăng trưởng; phát triển văn hóa; bảo vệ môi trường"
+        },
+        "CorrectAnswer": "B",
+        "SourceText": "Trích: Ba đột phá chiến lược: 1. Hoàn thiện thể chế kinh tế thị trường định hướng XHCN; 2. Phát triển nhanh nguồn nhân lực, nhất là chất lượng cao; 3. Xây dựng kết cấu hạ tầng đồng bộ, hiện đại.”"
+      },
+      {
+        "QuestionNumber": 10,
+        "Question": "Mục tiêu tổng quát mà Đại hội XI của Đảng đề ra cho giai đoạn 2011-2020 là gì?",
+        "Options": {
+          "A": "Đưa nước ta trở thành nước công nghiệp theo hướng hiện đại",
+          "B": "Ổn định kinh tế – xã hội và duy trì tăng trưởng",
+          "C": "Xây dựng xã hội công bằng, dân chủ, văn minh",
+          "D": "Hoàn thiện hệ thống chính trị xã hội chủ nghĩa"
+        },
+        "CorrectAnswer": "A",
+        "SourceText": "Trích: “Đại hội XI xác định mục tiêu tổng quát của Chiến lược phát triển kinh tế – xã hội 2011-2020 là: Phấn đấu đưa nước ta cơ bản trở thành nước công nghiệp theo hướng hiện đại; chính trị – xã hội ổn định, dân chủ, kỷ cương, đồng thuận; đời sống nhân dân được nâng cao; độc lập, chủ quyền, toàn vẹn lãnh thổ được giữ vững.\""
+      }
+    ]
+  },
+  {
+    "DaiHoi": "XII",
+    "Questions": [
+      {
+        "QuestionNumber": 1,
+        "Question": "Đại hội XII của Đảng (2016) được tổ chức trong bối cảnh nào sau đây?",
+        "Options": {
+          "A": "Sau 20 năm đổi mới, Việt Nam bước vào giai đoạn công nghiệp hóa.",
+          "B": "Sau 25 năm đổi mới, Việt Nam đã là nước công nghiệp hiện đại.",
+          "C": "Sau 30 năm đổi mới, Việt Nam đạt nhiều thành tựu và bước vào giai đoạn hội nhập quốc tế sâu rộng.",
+          "D": "Sau 35 năm đổi mới, Việt Nam hoàn tất quá trình công nghiệp hóa."
+        },
+        "CorrectAnswer": "C",
+        "SourceText": "Giải thích: Đại hội XII tổng kết 30 năm đồi mới (1986-2016), đánh dấu bước chuyển sang giai đoạn phát triển mới."
+      },
+      {
+        "QuestionNumber": 2,
+        "Question": "Chủ đề Đại hội XII của Đảng nhấn mạnh nội dung nào là trọng tâm hàng đầu?",
+        "Options": {
+          "A": "Đẩy mạnh hội nhập quốc tế.",
+          "B": "Tăng cường xây dựng Đảng trong sạch, vững mạnh.",
+          "C": "Phát triển kinh tế tư nhân.",
+          "D": "Giữ vững an ninh quốc phòng."
+        },
+        "CorrectAnswer": "B",
+        "SourceText": "Giải thích: Lần đầu tiên Đảng đặt “xây dựng Đảng trong sạch, vững mạnh lên hàng đầu trong chủ đề Đại hội."
+      },
+      {
+        "QuestionNumber": 3,
+        "Question": "Một trong những điểm mới nổi bật trong các văn kiện Đại hội XII là gì?",
+        "Options": {
+          "A": "Tập trung phát triển kinh tế nhà nước làm chủ đạo.",
+          "B": "Giảm vai trò khu vực tư nhân.",
+          "C": "Thừa nhận kinh tế tư nhân là một động lực quan trọng của nền kinh tế.",
+          "D": "Hạn chế đầu tư nước ngoài."
+        },
+        "CorrectAnswer": "C",
+        "SourceText": "Giải thích: Văn kiện Đại hội XII khẳng định “Phát triển kinh tế tư nhân trở thành một động lực quan trọng của nền kinh tế thị trường định hướng XHCN.\""
+      },
+      {
+        "QuestionNumber": 4,
+        "Question": "Nhiệm vụ trọng tâm hàng đầu trong 6 nhiệm vụ của nhiệm kỳ XII là gì?",
+        "Options": {
+          "A": "Tăng cường xây dựng, chỉnh đốn Đảng.",
+          "B": "Đổi mới mô hình tăng trưởng kinh tế.",
+          "C": "Đẩy mạnh cải cách hành chính.",
+          "D": "Phát triển văn hóa, con người Việt Nam."
+        },
+        "CorrectAnswer": "A",
+        "SourceText": "Giải thích: Đại hội XII xác định “Tăng cường xây dựng, chỉnh đốn Đảng là nhiệm vụ trọng tâm số 1."
+      },
+      {
+        "QuestionNumber": 5,
+        "Question": "Hội nghị Trung ương 4 khóa XII (2016) có nội dung trọng tâm là gì?",
+        "Options": {
+          "A": "Tăng cường xây dựng, chỉnh đốn Đảng; ngăn chặn suy thoái, “tự diễn biến”, “tự chuyển hóa”.",
+          "B": "Hoàn thiện thể chế kinh tế thị trường.",
+          "C": "Cải cách chính sách tiền lương.",
+          "D": "Sắp xếp tổ chức bộ máy tinh gọn."
+        },
+        "CorrectAnswer": "A",
+        "SourceText": "Giải thích: Nghị quyết Trung ương 4 khóa XII tập trung vào chỉnh đốn Đảng, lần đầu nhận diện 27 biểu hiện “tự diễn biến, tự chuyển hóa\"."
+      },
+      {
+        "QuestionNumber": 6,
+        "Question": "Nghị quyết 10-NQ/TW (2017) được thông qua tại Hội nghị Trung ương 5 khóa XII có nội dung gì?",
+        "Options": {
+          "A": "Cải cách chính sách tiền lương.",
+          "B": "Phát triển kinh tế tư nhân trở thành động lực quan trọng của nền kinh tế.",
+          "C": "Đổi mới tổ chức bộ máy nhà nước.",
+          "D": "Cải cách bảo hiểm xã hội."
+        },
+        "CorrectAnswer": "B",
+        "SourceText": "Giải thích: Nghị quyết 10-NQ/TW (2017) khẳng định kinh tế tư nhân là một động lực quan trọng – bước phát triển lý luận mới của Đảng."
+      },
+      {
+        "QuestionNumber": 7,
+        "Question": "Nghị quyết 18-NQ/TW (2017) của Hội nghị Trung ương 6 khóa XII hướng tới mục tiêu nào?",
+        "Options": {
+          "A": "Sắp xếp tổ chức bộ máy của hệ thống chính trị tinh gọn, hiệu lực, hiệu quả.",
+          "B": "Xây dựng đội ngũ cán bộ cấp chiến lược.",
+          "C": "Phát triển kinh tế tư nhân.",
+          "D": "Cải cách chính sách bảo hiểm xã hội."
+        },
+        "CorrectAnswer": "A",
+        "SourceText": "Giải thích: Nghị quyết 18 đề ra việc giảm tầng nấc trung gian, tinh giản biên chế 10%, đổi mới cơ chế tự chủ."
+      },
+      {
+        "QuestionNumber": 8,
+        "Question": "Nghị quyết 26-NQ/TW (2018) của Hội nghị Trung ương 7 khóa XII đề cập đến vấn đề gì?",
+        "Options": {
+          "A": "Xây dựng đội ngũ cán bộ các cấp, nhất là cấp chiến lược, đủ phẩm chất, năng lực, uy tín.",
+          "B": "Hoàn thiện thể chế kinh tế thị trường.",
+          "C": "Phát triển bền vững kinh tế biển.",
+          "D": "Cải cách đơn vị sự nghiệp công lập."
+        },
+        "CorrectAnswer": "A",
+        "SourceText": "Giải thích: Nghị quyết 26 được coi là nghị quyết “then chốt của then chốt\", yêu cầu kiểm soát quyền lực, chống chạy chức, chạy quyền."
+      },
+      {
+        "QuestionNumber": 9,
+        "Question": "Nghị quyết 27-NQ/TW (2018) về cải cách chính sách tiền lương đặt ra mục tiêu gì?",
+        "Options": {
+          "A": "Xây dựng chế độ tiền lương mới thống nhất, gắn với vị trí việc làm, áp dụng từ năm 2021.",
+          "B": "Giảm biên chế công chức xuống 50%.",
+          "C": "Tăng lương bình quân hàng năm 10%.",
+          "D": "Hợp nhất hệ thống lương với khu vực tư nhân."
+        },
+        "CorrectAnswer": "A",
+        "SourceText": "Giải thích: Nghị quyết 27 nhấn mạnh tiền lương là thu nhập chính, góp phần chống tham nhũng, thực hiện chế độ mới sau năm 2021."
+      },
+      {
+        "QuestionNumber": 10,
+        "Question": "Nghị quyết 36-NQ/TW (2018) của Hội nghị Trung ương 8 khóa XII đề cập lĩnh vực nào?",
+        "Options": {
+          "A": "Hoàn thiện bộ máy hành chính.",
+          "B": "Xây dựng đội ngũ cán bộ cấp chiến lược.",
+          "C": "Chiến lược phát triển bền vững kinh tế biển Việt Nam đến năm 2030, tầm nhìn 2045.",
+          "D": "Phát triển kinh tế tư nhân."
+        },
+        "CorrectAnswer": "C",
+        "SourceText": "Giải thích: Nghị quyết 36 xác định đưa Việt Nam trở thành quốc gia mạnh về biển, giàu từ biển, bảo đảm quốc phòng, an ninh và chủ quyền biển đảo."
+      }
+    ]
+  },
+  {
+    "DaiHoi": "XIII",
+    "Questions": [
+      {
+        "QuestionNumber": 1,
+        "Question": "Đại hội XIII của Đảng được tổ chức trong bối cảnh nào sau đây?",
+        "Options": {
+          "A": "Việt Nam đang đối mặt với khủng hoảng kinh tế toàn cầu năm 2008.",
+          "B": "Việt Nam bắt đầu tiến trình hội nhập WTO.",
+          "C": "Đại dịch COVID-19 bùng phát toàn cầu, cạnh tranh chiến lược giữa các nước lớn gia tăng.",
+          "D": "Việt Nam mới khởi động công cuộc đổi mới."
+        },
+        "CorrectAnswer": "C",
+        "SourceText": "Giải thích: Đại hội XIII diễn ra trong bối cảnh thế giới biến động sâu sắc bởi Cách mạng 4.0 và đại dịch COVID-19, cạnh tranh chiến lược giữa các nước lớn gay gắt."
+      },
+      {
+        "QuestionNumber": 2,
+        "Question": "Sau 35 năm đổi mới (1986-2021), Việt Nam đạt được thành tựu nổi bật nào được nêu tại Đại hội XIII?",
+        "Options": {
+          "A": "Đất nước phát triển nhanh, bền vững hơn; vị thế và uy tín quốc tế được củng cố.",
+          "B": "Kinh tế thị trường tự do hóa hoàn toàn.",
+          "C": "Đã trở thành nước phát triển, thu nhập cao.",
+          "D": "Không còn tồn tại khoảng cách giàu nghèo."
+        },
+        "CorrectAnswer": "A",
+        "SourceText": "Giải thích: Văn kiện XIII đánh giá sau 35 năm đổi mới, thế và lực, uy tín quốc tế của Việt Nam lớn mạnh hơn bao giờ hết."
+      },
+      {
+        "QuestionNumber": 3,
+        "Question": "Cụm từ “khơi dậy khát vọng phát triển đất nước phồn vinh, hạnh phúc” lần đầu tiên xuất hiện trong văn kiện Đại hội nào?",
+        "Options": {
+          "A": "Đại hội XI",
+          "B": "Đại hội XII",
+          "C": "Đại hội XIII",
+          "D": "Đại hội X"
+        },
+        "CorrectAnswer": "C",
+        "SourceText": "Giải thích: Đại hội XIII lần đầu tiên đưa vào chủ đề “khơi dậy khát vọng phát triển đất nước phồn vinh, hạnh phúc”, phản ánh tư duy phát triển mới."
+      },
+      {
+        "QuestionNumber": 4,
+        "Question": "Một điểm mới nổi bật của Đại hội XIII là gì?",
+        "Options": {
+          "A": "Giới hạn tầm nhìn phát triển đến năm 2030.",
+          "B": "Xác định tầm nhìn phát triển đất nước đến năm 2045.",
+          "C": "Chỉ tập trung phát triển kinh tế, chưa chú trọng con người.",
+          "D": "Không đề cập đến đổi mới sáng tạo."
+        },
+        "CorrectAnswer": "B",
+        "SourceText": "Giải thích: Lần đầu tiên trong lịch sử Đảng, Đại hội XIII đề ra tầm nhìn đến năm 2045- 100 năm thành lập nước."
+      },
+      {
+        "QuestionNumber": 5,
+        "Question": "Theo Văn kiện Đại hội XIII, mục tiêu đến năm 2045 của Việt Nam là gì?",
+        "Options": {
+          "A": "Là nước công nghiệp mới nổi.",
+          "B": "Là nước thu nhập trung bình cao.",
+          "C": "Là nước phát triển, thu nhập cao.",
+          "D": "Là nước công nghiệp cơ bản hiện đại."
+        },
+        "CorrectAnswer": "C",
+        "SourceText": "Giải thích: Văn kiện xác định: “Đến năm 2045, trở thành nước phát triển, thu nhập cao.\""
+      },
+      {
+        "QuestionNumber": 6,
+        "Question": "Ba đột phá chiến lược được Đại hội XIII nhấn mạnh là gì?",
+        "Options": {
+          "A": "Khoa học – công nghệ, giáo dục, văn hóa.",
+          "B": "Kinh tế tư nhân, thương mại, quốc phòng.",
+          "C": "Thể chế phát triển – nguồn nhân lực chất lượng cao – hạ tầng đồng bộ, hiện đại.",
+          "D": "Xã hội hóa – hội nhập – cải cách hành chính."
+        },
+        "CorrectAnswer": "C",
+        "SourceText": "Giải thích: Ba đột phá chiến lược là thể chế, nhân lực, hạ tầng, kế thừa và phát triển từ Đại hội XII."
+      },
+      {
+        "QuestionNumber": 7,
+        "Question": "Trong sáu nhiệm vụ trọng tâm của nhiệm kỳ XIII, nhiệm vụ số một là gì?",
+        "Options": {
+          "A": "Tăng cường xây dựng, chỉnh đốn Đảng và hệ thống chính trị trong sạch, vững mạnh.",
+          "B": "Phát triển kinh tế tư nhân.",
+          "C": "Đổi mới mô hình tăng trưởng kinh tế.",
+          "D": "Đẩy mạnh hội nhập quốc tế."
+        },
+        "CorrectAnswer": "A",
+        "SourceText": "Giải thích: Văn kiện XIII khẳng định đây là “then chốt của then chốt\", nền tảng cho mọi nhiệm vụ khác."
+      },
+      {
+        "QuestionNumber": 8,
+        "Question": "Nghị quyết Trung ương 4 khóa XIII (2021) mở rộng phạm vi chỉnh đốn Đảng sang lĩnh vực nào?",
+        "Options": {
+          "A": "Văn hóa và giáo dục.",
+          "B": "Kinh tế tư nhân.",
+          "C": "Toàn bộ hệ thống chính trị.",
+          "D": "Quan hệ đối ngoại."
+        },
+        "CorrectAnswer": "C",
+        "SourceText": "Giải thích: Nghị quyết Trung ương 4 khóa XIII lần đầu tiên nêu rõ: “xây dựng, chỉnh đốn Đảng và hệ thống chính trị trong sạch, vững mạnh toàn diện.\""
+      },
+      {
+        "QuestionNumber": 9,
+        "Question": "Nghị quyết 29-NQ/TW (2023) của Hội nghị Trung ương 7 khóa XIII tập trung vào lĩnh vực nào?",
+        "Options": {
+          "A": "Giáo dục – đào tạo và phát triển nguồn nhân lực chất lượng cao.",
+          "B": "Hoàn thiện thể chế kinh tế thị trường.",
+          "C": "Bảo vệ chủ quyền biển đảo.",
+          "D": "Cải cách hành chính công."
+        },
+        "CorrectAnswer": "A",
+        "SourceText": "Giải thích: Nghị quyết 29 về đổi mới căn bản, toàn diện giáo dục – đào tạo, phát triển nhân lực và chuyển đổi số trong giáo dục."
+      },
+      {
+        "QuestionNumber": 10,
+        "Question": "Ý nghĩa bao trùm nhất của Đại hội XIII là gì?",
+        "Options": {
+          "A": "Đại hội của hội nhập kinh tế quốc tế.",
+          "B": "Đại hội của chống tham nhũng.",
+          "C": "Đại hội của \"Khát vọng phát triển đất nước phồn vinh, hạnh phúc\".",
+          "D": "Đại hội của công nghiệp hóa, hiện đại hóa."
+        },
+        "CorrectAnswer": "C",
+        "SourceText": "Giải thích: Đại hội XIII là “Đại hội của khát vọng phát triển phồn vinh, hạnh phúc”, đặt con người – hạnh phúc – văn hóa ở trung tâm."
+      }
+    ]
+  },
+  {
+    "DaiHoi": "IX",
+    "Questions": [
+      {
+        "QuestionNumber": 1,
+        "Question": "Đại hội IX của Đảng được tổ chức vào thời gian nào và ở đâu?",
+        "Options": {
+          "A": "Hà Nội, từ ngày 19-22/4/2001",
+          "B": "Hà Nội, từ ngày 22-25/4/2006",
+          "C": "TP. Hồ Chí Minh, từ ngày 20-23/4/2001",
+          "D": "Hà Nội, từ ngày 15-18/4/2000"
+        },
+        "CorrectAnswer": "A",
+        "SourceText": "Giải thích: Đại hội IX họp tại Hà Nội từ ngày 19 đến ngày 22 tháng 4 năm 2001. (Dẫn chứng: phần mở đầu của nội dung Đại hội IX.)"
+      },
+      {
+        "QuestionNumber": 2,
+        "Question": "Ai được bầu làm Tổng Bí thư Ban Chấp hành Trung ương Đảng khóa IX?",
+        "Options": {
+          "A": "Đỗ Mười",
+          "B": "Lê Khả Phiêu",
+          "C": "Nông Đức Mạnh",
+          "D": "Nguyễn Phú Trọng"
+        },
+        "CorrectAnswer": "C",
+        "SourceText": "Giải thích: Đồng chí Nông Đức Mạnh được bầu làm Tổng Bí thư của Đảng tại Đại hội IX. (Dẫn chứng: mục 1 – Nội dung cơ bản.)"
+      },
+      {
+        "QuestionNumber": 3,
+        "Question": "Chiến lược phát triển kinh tế – xã hội 2001–2010 do Đại hội IX thông qua đặt mục tiêu gì?",
+        "Options": {
+          "A": "Hoàn thiện thể chế chính trị xã hội chủ nghĩa",
+          "B": "Đưa Việt Nam trở thành nước công nghiệp phát triển vào năm 2010",
+          "C": "Đưa nước ta ra khỏi tình trạng kém phát triển, tạo nền tảng để đến năm 2020 cơ bản trở thành nước công nghiệp theo hướng hiện đại",
+          "D": "Giảm nghèo bền vững và thu hẹp khoảng cách vùng miền"
+        },
+        "CorrectAnswer": "C",
+        "SourceText": "Giải thích: Chiến lược 2001-2010 xác định mục tiêu tổng quát là tạo nền tảng để đến năm 2020 cơ bản trở thành nước công nghiệp theo hướng hiện đại. (Dẫn chứng: mục B – 'Mục tiêu Tổng quát (Chiến lược 2001-2010)'.)"
+      },
+      {
+        "QuestionNumber": 4,
+        "Question": "Lần đầu tiên trong lịch sử, Đại hội IX xác định rõ nội dung cơ bản của:",
+        "Options": {
+          "A": "Chủ nghĩa xã hội khoa học",
+          "B": "Tư tưởng Hồ Chí Minh",
+          "C": "Cương lĩnh xây dựng đất nước thời kỳ quá độ",
+          "D": "Đường lối đối ngoại độc lập tự chủ"
+        },
+        "CorrectAnswer": "B",
+        "SourceText": "Giải thích: Đại hội IX lần đầu tiên xác định rõ nội dung cơ bản của Tư tưởng Hồ Chí Minh, coi đó là tài sản tinh thần to lớn của Đảng và dân tộc. (Dẫn chứng: mục A – 'Về Lý luận và Tư tưởng'.)"
+      },
+      {
+        "QuestionNumber": 5,
+        "Question": "Đại hội IX xác định mô hình kinh tế tổng quát trong thời kỳ quá độ là:",
+        "Options": {
+          "A": "Nền kinh tế kế hoạch hóa tập trung",
+          "B": "Nền kinh tế hỗn hợp",
+          "C": "Nền kinh tế thị trường định hướng xã hội chủ nghĩa",
+          "D": "Nền kinh tế tư bản nhà nước"
+        },
+        "CorrectAnswer": "C",
+        "SourceText": "Giải thích: Đảng ta xác định nền kinh tế thị trường định hướng xã hội chủ nghĩa là mô hình kinh tế tổng quát, nhất quán và lâu dài. (Dẫn chứng: mục B – “Mô hình Kinh tế”.)"
+      },
+      {
+        "QuestionNumber": 6,
+        "Question": "Theo Đại hội IX, động lực chủ yếu để phát triển đất nước là gì?",
+        "Options": {
+          "A": "Tăng cường vốn đầu tư nước ngoài",
+          "B": "Phát huy nội lực trong nước",
+          "C": "Đại đoàn kết toàn dân tộc trên cơ sở liên minh công – nông – trí thức",
+          "D": "Tăng cường kinh tế nhà nước"
+        },
+        "CorrectAnswer": "C",
+        "SourceText": "Giải thích: Đại hội IX khẳng định động lực phát triển là đại đoàn kết toàn dân trên cơ sở liên minh công – nông – trí thức do Đảng lãnh đạo. (Dẫn chứng: mục B – 'Động lực Phát triển'.)"
+      },
+      {
+        "QuestionNumber": 7,
+        "Question": "Đường lối đối ngoại được Đại hội IX đề ra là:",
+        "Options": {
+          "A": "Đóng cửa bảo vệ thị trường nội địa",
+          "B": "Liên kết kinh tế khu vực ASEAN",
+          "C": "Độc lập tự chủ, đa phương hóa, đa dạng hóa, chủ động hội nhập kinh tế quốc tế",
+          "D": "Tăng cường hợp tác với các nước xã hội chủ nghĩa"
+        },
+        "CorrectAnswer": "C",
+        "SourceText": "Giải thích: Đại hội IX khẳng định đường lối đối ngoại độc lập tự chủ, rộng mở, đa phương hóa, đa dạng hóa, chủ động hội nhập quốc tế. (Dẫn chứng: mục C – “Đường lối Đối ngoại”.)"
+      },
+      {
+        "QuestionNumber": 8,
+        "Question": "Theo Đại hội IX, văn hóa có vai trò như thế nào trong xã hội?",
+        "Options": {
+          "A": "Là phương tiện tuyên truyền chính trị",
+          "B": "Là công cụ điều tiết kinh tế",
+          "C": "Là nền tảng tinh thần của xã hội, vừa là mục tiêu vừa là động lực phát triển",
+          "D": "Là yếu tố phụ thuộc vào kinh tế"
+        },
+        "CorrectAnswer": "C",
+        "SourceText": "Giải thích: Đại hội IX xác định văn hóa là nền tảng tinh thần của xã hội, vừa là mục tiêu, vừa là động lực thúc đẩy phát triển kinh tế – xã hội. (Dẫn chứng: mục E – “Về Văn hóa và Công tác Tư tưởng .)"
+      },
+      {
+        "QuestionNumber": 9,
+        "Question": "Hội nghị Trung ương 3 (9–2001) của khóa IX bàn về nội dung gì?",
+        "Options": {
+          "A": "Phát triển kinh tế tập thể",
+          "B": "Xây dựng Chiến lược bảo vệ Tổ quốc",
+          "C": "Đổi mới, sắp xếp doanh nghiệp nhà nước",
+          "D": "Công tác dân tộc và tôn giáo"
+        },
+        "CorrectAnswer": "C",
+        "SourceText": "Giải thích: Hội nghị Trung ương 3 chỉ đạo việc sắp xếp, đổi mới, phát triển và nâng cao hiệu quả doanh nghiệp nhà nước, phục vụ CNH, HĐH. (Dẫn chứng: mục F.1 – 'Hội nghị Trung ương 3 (9-2001)'.)"
+      },
+      {
+        "QuestionNumber": 10,
+        "Question": "Ý nghĩa lịch sử – chính trị nổi bật nhất của Đại hội IX là:",
+        "Options": {
+          "A": "Đại hội tổng kết 10 năm đổi mới",
+          "B": "Đại hội đầu tiên có sự tham dự của hơn 1000 đại biểu",
+          "C": "Đại hội mở đầu thế kỷ XXI, đặt nền móng cho giai đoạn đẩy mạnh CNH, HĐH và hội nhập quốc tế",
+          "D": "Đại hội đưa Việt Nam trở thành thành viên WTO"
+        },
+        "CorrectAnswer": "C",
+        "SourceText": "Giải thích: Đại hội IX là Đại hội mở đầu thế kỷ XXI, đánh dấu bước trưởng thành về tư duy lý luận và thực tiễn đổi mới, đặt nền tảng cho CNH, HĐH và hội nhập quốc tế. (Dẫn chứng: mục 4 – “Ý nghĩa lịch sử – chính trị”.)"
+      }
+    ]
+  },
+  {
+    "DaiHoi": "X",
+    "Questions": [
+      {
+        "QuestionNumber": 1,
+        "Question": "Đại hội đại biểu toàn quốc lần thứ X của Đảng Cộng sản Việt Nam được tổ chức vào thời gian nào?",
+        "Options": {
+          "A": "Từ ngày 18-25/4/2006 tại Hà Nội",
+          "B": "Từ ngày 15-22/4/2005 tại Hà Nội",
+          "C": "Từ ngày 20-27/4/2007 tại TP. Hồ Chí Minh",
+          "D": "Từ ngày 18-25/4/2008 tại Hà Nội"
+        },
+        "CorrectAnswer": "A",
+        "SourceText": "Giải thích: Đại hội X họp tại Hà Nội từ ngày 18 đến 25 tháng 4 năm 2006, với 1.176 đại biểu đại diện cho hơn 3,1 triệu đảng viên trong cả nước."
+      },
+      {
+        "QuestionNumber": 2,
+        "Question": "Ai được bầu làm Tổng Bí thư tại Đại hội X của Đảng?",
+        "Options": {
+          "A": "Nguyễn Phú Trọng",
+          "B": "Nông Đức Mạnh",
+          "C": "Trần Đức Lương",
+          "D": "Nguyễn Tấn Dũng"
+        },
+        "CorrectAnswer": "B",
+        "SourceText": "Giải thích: Đại hội X bầu đồng chí Nông Đức Mạnh tiếp tục giữ chức Tổng Bí thư Ban Chấp hành Trung ương Đảng khóa X."
+      },
+      {
+        "QuestionNumber": 3,
+        "Question": "Chủ đề của Đại hội X là gì?",
+        "Options": {
+          "A": "Đổi mới toàn diện đất nước theo định hướng xã hội chủ nghĩa",
+          "B": "Đẩy mạnh CNH, HĐH, phát triển kinh tế tri thức",
+          "C": "Nâng cao năng lực lãnh đạo, phát huy sức mạnh toàn dân, sớm đưa nước ta ra khỏi tình trạng kém phát triển",
+          "D": "Xây dựng nền dân chủ xã hội chủ nghĩa và hội nhập quốc tế"
+        },
+        "CorrectAnswer": "C",
+        "SourceText": "Giải thích: Chủ đề chính thức của Đại hội X là: “Nâng cao năng lực lãnh đạo và sức chiến đấu của Đảng, phát huy sức mạnh toàn dân tộc, đẩy mạnh toàn diện công cuộc đổi mới, sớm đưa nước ta ra khỏi tình trạng kém phát triển.\""
+      },
+      {
+        "QuestionNumber": 4,
+        "Question": "Đại hội X của Đảng diễn ra trong bối cảnh đất nước có đặc điểm nổi bật nào?",
+        "Options": {
+          "A": "Đất nước đang trong giai đoạn khủng hoảng kinh tế - xã hội",
+          "B": "Đất nước đã trải qua 20 năm đổi mới, đạt nhiều thành tựu to lớn",
+          "C": "Việt Nam mới bắt đầu thực hiện công cuộc đổi mới",
+          "D": "Kinh tế Việt Nam đang suy thoái nghiêm trọng"
+        },
+        "CorrectAnswer": "B",
+        "SourceText": "Giải thích: Đến năm 2006, Việt Nam đã có 20 năm đổi mới, đạt thành tựu to lớn có ý nghĩa lịch sử, thế và lực quốc tế tăng lên rõ rệt, tạo tiền đề cho giai đoạn đầy mạnh CNH, HĐH."
+      },
+      {
+        "QuestionNumber": 5,
+        "Question": "Một trong những bài học chủ yếu được Đại hội X rút ra sau 20 năm đổi mới là gì?",
+        "Options": {
+          "A": "Chỉ tập trung vào phát triển kinh tế thị trường",
+          "B": "Đổi mới phải toàn diện, đồng bộ, có kế thừa và bước đi phù hợp",
+          "C": "Tách kinh tế khỏi chính trị để phát triển độc lập",
+          "D": "Ưu tiên hội nhập quốc tế hơn phát triển trong nước"
+        },
+        "CorrectAnswer": "B",
+        "SourceText": "Giải thích: Đại hội X rút ra 5 bài học kinh nghiệm lớn, trong đó nhấn mạnh: “Đổi mới phải toàn diện, đồng bộ, có kế thừa, có bước đi, hình thức và cách làm phù hợp.\""
+      },
+      {
+        "QuestionNumber": 6,
+        "Question": "Đại hội X bổ sung thêm mấy đặc trưng mới của xã hội xã hội chủ nghĩa so với Cương lĩnh 1991?",
+        "Options": {
+          "A": "1",
+          "B": "2",
+          "C": "3",
+          "D": "4"
+        },
+        "CorrectAnswer": "B",
+        "SourceText": "Giải thích: Đại hội X bổ sung 2 đặc trưng mới về xã hội xã hội chủ nghĩa, đồng thời diễn đạt lại các đặc trưng khác cho phù hợp tình hình mới, thể hiện nhận thức sâu sắc hơn về mô hình xã hội mà Việt Nam đang xây dựng."
+      },
+      {
+        "QuestionNumber": 7,
+        "Question": "Một trong những điểm mới của Đại hội X về xây dựng Đảng là gì?",
+        "Options": {
+          "A": "Cho phép đảng viên làm kinh tế tư nhân",
+          "B": "Hạn chế đảng viên tham gia hoạt động kinh tế",
+          "C": "Chỉ tập trung vào công tác chính trị tư tưởng",
+          "D": "Không đặt vấn đề chỉnh đốn Đảng"
+        },
+        "CorrectAnswer": "A",
+        "SourceText": "Giải thích: Đại hội X cho phép đảng viên làm kinh tế tư nhân, kể cả tư bản tư nhân, nhưng phải tuân thủ Điều lệ Đảng, nghị quyết và pháp luật Nhà nước, thể hiện sự linh hoạt, thực tiễn trong công tác cán bộ thời kỳ đổi mới."
+      },
+      {
+        "QuestionNumber": 8,
+        "Question": "Một trong những nội dung trọng tâm về CNH, HĐH được Đại hội X nhấn mạnh là gì?",
+        "Options": {
+          "A": "Tập trung vào công nghiệp nặng, bỏ qua dịch vụ",
+          "B": "Đẩy mạnh CNH, HĐH gắn với phát triển kinh tế tri thức",
+          "C": "Ưu tiên phát triển nông nghiệp, hạn chế công nghiệp",
+          "D": "Đẩy mạnh xuất khẩu tài nguyên thô"
+        },
+        "CorrectAnswer": "B",
+        "SourceText": "Giải thích: Đại hội X xác định: Đẩy mạnh CNH, HĐH gắn với phát triển kinh tế tri thức, hoàn thiện thể chế kinh tế thị trường định hướng XHCN.” ->Đây là bước phát triển mới trong tư duy lý luận của Đảng, phù hợp xu thế hội nhập toàn cầu."
+      },
+      {
+        "QuestionNumber": 9,
+        "Question": "Một trong những sự kiện tiêu biểu gắn với thời kỳ Đại hội X là gì?",
+        "Options": {
+          "A": "Việt Nam gia nhập ASEAN",
+          "B": "Việt Nam chính thức gia nhập WTO",
+          "C": "Việt Nam trở thành thành viên Hội đồng Bảo an Liên Hợp Quốc",
+          "D": "Việt Nam khởi động công cuộc đổi mới"
+        },
+        "CorrectAnswer": "B",
+        "SourceText": "Giải thích: Trong nhiệm kỳ Đại hội X, Việt Nam chính thức trở thành thành viên thứ 150 của Tổ chức Thương mại Thế giới (WTO) vào ngày 11/1/2007, đánh dấu bước ngoặt hội nhập kinh tế quốc tế sâu rộng."
+      },
+      {
+        "QuestionNumber": 10,
+        "Question": "Ý nghĩa lịch sử – chính trị nổi bật nhất của Đại hội X là gì?",
+        "Options": {
+          "A": "Mở đầu thời kỳ đổi mới",
+          "B": "Khẳng định con đường đi lên CNXH là đúng đắn và đặt nền tảng cho giai đoạn phát triển mới",
+          "C": "Thực hiện chính sách bao cấp",
+          "D": "Kết thúc thời kỳ kháng chiến chống Mỹ"
+        },
+        "CorrectAnswer": "B",
+        "SourceText": "Giải thích: Đại hội X: Khẳng định đường lối đổi mới đúng đắn, sáng tạo và phù hợp thực tiễn. Cụ thể hóa Cương lĩnh 1991, đặt nền tảng cho giai đoạn phát triển mới của đất nước, hướng tới mục tiêu “Dân giàu, nước mạnh, xã hội công bằng, dân chủ, văn minh.\""
+      }
+    ]
+  },
+  {
+    "DaiHoi": "VIII",
+    "Questions": [
+      {
+        "QuestionNumber": 1,
+        "Question": "Đại hội VIII (1996) đã tổng kết 10 năm đổi mới và đưa ra khẳng định quan trọng nào về tình hình đất nước?",
+        "Options": {
+          "A": "Nước ta đã cơ bản hoàn thành các mục tiêu của chủ nghĩa xã hội",
+          "B": "Nước ta đã ra khỏi khủng hoảng kinh tế-xã hội.",
+          "C": "Nước ta đã kiềm chế hoàn toàn được lạm phát.",
+          "D": "Nước ta đã trở thành một nước công nghiệp mới (NIC)"
+        },
+        "CorrectAnswer": "B",
+        "SourceText": "Giải thích : - Đại hội tổng kết 10 năm đổi mới, khẳng định đất nước đã thu được những thành tựu to lớn, có ý nghĩa rất quan trọng. Nước ta đã ra khỏi khủng hoảng kinh tế-xã hội"
+      },
+      {
+        "QuestionNumber": 2,
+        "Question": "Theo nội dung Đại hội VIII, ai là người được bầu làm Tổng Bí thư tại Đại hội và ai là người được bầu thay thế tại Hội nghị Trung ương 4 (12-1997)?",
+        "Options": {
+          "A": "Đồng chí Đỗ Mười (tại Đại hội) và đồng chí Lê Khả Phiêu (tại HNTW 4).",
+          "B": "Đồng chí Lê Khả Phiêu (tại Đại hội) và đồng chí Đỗ Mười (tại HNTW 4).",
+          "C": "Đồng chí Đỗ Mười (tại Đại hội) và đồng chí Nông Đức Mạnh (tại HNTW 4).",
+          "D": "Đồng chí Nguyễn Văn Linh (tại Đại hội) và đồng chí Đỗ Mười (tại HNTW 4)"
+        },
+        "CorrectAnswer": "A",
+        "SourceText": "Giải thích: Thành phần và Kết quả Bầu cử: \"Đại hội bầu đồng chí Đỗ Mười tiếp tục làm Tổng Bí thư. (Sau đó, tại Hội nghị Trung ương 4 khóa VIII tháng 12-1997, đồng chí Lê Khả Phiêu được bầu làm Tổng Bí thư)"
+      },
+      {
+        "QuestionNumber": 3,
+        "Question": "Một trong sáu bài học kinh nghiệm chủ yếu được rút ra sau 10 năm đổi mới tại Đại hội VIII là gì?",
+        "Options": {
+          "A": "Phải ưu tiên đổi mới chính trị, sau đó mới đổi mới kinh tế.",
+          "B": "Tăng cường vai trò lãnh đạo của Đảng, coi xây dựng Đảng là nhiệm vụ then chốt.",
+          "C": "Chỉ tập trung vào sức mạnh dân tộc, hạn chế hợp tác quốc tế.",
+          "D": "Kinh tế nhà nước là thành phần duy nhất để xây dựng chủ nghĩa xã hội."
+        },
+        "CorrectAnswer": "B",
+        "SourceText": "Giải thích: Đây là bài học thứ sáu trong sáu bài học kinh nghiệm được rút ra, Nằm trong Mục 2: Nội dung và Nhận thức mới"
+      },
+      {
+        "QuestionNumber": 4,
+        "Question": "Đại hội VIII đánh dấu bước ngoặt đưa đất nước sang thời kỳ mới với nhiệm vụ trung tâm là gì?",
+        "Options": {
+          "A": "Đẩy mạnh công nghiệp hóa, hiện đại hóa đất nước.",
+          "B": "Hoàn thành cải cách ruộng đất trên cả nước.",
+          "C": "Ưu tiên phát triển công nghiệp nặng.",
+          "D": "Thực hiện cơ chế kinh tế tập trung, quan liêu, bao cấp."
+        },
+        "CorrectAnswer": "A",
+        "SourceText": "Giải thích: Sau khi ra khỏi khủng hoảng kinh tế-xã hội, Đại hội VIII xác định nhiệm vụ mới là CNH, HĐH. Sau 10 năm đổi mới, đất nước đã đạt được nhiều thành tựu quan trọng và thoát khỏi khủng hoảng kinh tế – xã hội. Những nhiệm vụ của chặng đầu thời kỳ quá độ (tạo tiền đề cho công nghiệp hoá) đã cơ bản hoàn thành, tạo điều kiện để chuyển sang giai đoạn mới: đẩy mạnh công nghiệp hoá, hiện đại hoá đất nước."
+      },
+      {
+        "QuestionNumber": 5,
+        "Question": "Quan điểm nào sau đây KHÔNG thuộc 6 quan điểm về CNH, HĐH trong thời kỳ mới được Đại hội VIII đề ra?",
+        "Options": {
+          "A": "CNH, HĐH là sự nghiệp của toàn dân, của mọi thành phần kinh tế.",
+          "B": "Lấy việc phát huy nguồn lực con người là yếu tố cơ bản.",
+          "C": "Lấy hiệu quả kinh tế làm chuẩn cơ bản để xác định phương án phát triển.",
+          "D": "Dựa chủ yếu vào nguồn vốn ODA và đầu tư nước ngoài làm động lực chính."
+        },
+        "CorrectAnswer": "D",
+        "SourceText": "Giải thích: Quan điểm đúng của Đại hội VIII là \"Dựa vào nguồn lực trong nước là chính đi đôi với tranh thủ tối đa nguồn lực bên ngoài,\" chứ không phải dựa chủ yếu vào nguồn lực bên ngoài. Vị trí trong nội dung: Mục 2 (Nội dung và Nhận thức mới) -> B. Về Mục tiêu -> 6 quan điểm -> Quan điểm 1: \"Dựa vào nguồn lực trong nước là chính đi đôi với tranh thủ tối đa nguồn lực bên ngoài.\""
+      },
+      {
+        "QuestionNumber": 6,
+        "Question": "Đại hội VIII đã bổ sung đặc trưng tổng quát nào về mục tiêu xây dựng chủ nghĩa xã hội ở Việt Nam?",
+        "Options": {
+          "A": "\"Độc lập - Tự do - Hạnh phúc\".",
+          "B": "\"Dân giàu, nước mạnh, xã hội công bằng, văn minh\".",
+          "C": "\"Công nghiệp hóa, hiện đại hóa, dân chủ hóa\".",
+          "D": "\"Đoàn kết - Dân chủ - Kỷ cương - Đổi mới\"."
+        },
+        "CorrectAnswer": "B",
+        "SourceText": "Giải thích: Đây là mục tiêu tổng quát (hay đặc trưng tổng quát) được Đại hội VIII bổ sung vào hệ thống mục tiêu của CNΧΗ. Dẫn chứng: Mục 2 - Nội dung và Nhận thức mới phần C Về Mục tiêu Xã hội"
+      },
+      {
+        "QuestionNumber": 7,
+        "Question": "Hội nghị Trung ương 6 (lần 2) tháng 2-1999 đã kiên định quan điểm có tính nguyên tắc nào trong xây dựng hệ thống chính trị?",
+        "Options": {
+          "A": "Chấp nhận thí điểm mô hình \"đa nguyên, đa đảng\".",
+          "B": "Tách rời sự lãnh đạo của Đảng ra khỏi Nhà nước.",
+          "C": "Không chấp nhận \"đa nguyên, đa đảng\".",
+          "D": "Cho phép tư nhân hóa hoàn toàn các cơ quan báo chí."
+        },
+        "CorrectAnswer": "C",
+        "SourceText": "Giải thích: Trong bối cảnh CNXH ở Đông Âu và Liên Xô thoái trào, Hội nghị TW 6 (lần 2) đã kiên định nguyên tắc không chấp nhận đa nguyên, đa đảng. Vị trí trong nội dung: Mục 2 (Nội dung và Nhận thức mới) -> D. Về Xây dựng Đảng -> \"Đảng Cộng sản lãnh đạo, không chấp nhận “đa nguyên, đa đảng\"...\".\""
+      },
+      {
+        "QuestionNumber": 8,
+        "Question": "Chỉ thị 30-CT/TW (2-1998) của Bộ Chính trị được ban hành để giải quyết vấn đề cấp bách nào?",
+        "Options": {
+          "A": "Tình trạng mất dân chủ nghiêm trọng ở một số nơi.",
+          "B": "Nạn tham nhũng trong các dự án đầu tư công.",
+          "C": "Chiến lược cán bộ cho thời kỳ mới.",
+          "D": "Tình trạng \"tự diễn biến\", \"tự chuyển hóa\" trong nội bộ."
+        },
+        "CorrectAnswer": "A",
+        "SourceText": "Giải thích: Chỉ thị 30 về Quy chế dân chủ ở cơ sở được ban hành trực tiếp sau khi xảy ra các vụ việc mất dân chủ nghiêm trọng ở một số địa phương (như Thái Bình) vào năm 1997. Vị trí trong nội dung: Mục 2 (Nội dung và Nhận thức mới) -> D. Về Xây dựng Đảng -> Ý \"Dân chủ cơ sở\": \"Trước tình hình mất dân chủ nghiêm trọng ở một số nơi (năm 1997), Bộ Chính trị đã ban hành Chỉ thị số 30-CT/TW (2-1998) về Quy chế dân chủ ở cơ sở.\""
+      },
+      {
+        "QuestionNumber": 9,
+        "Question": "Hội nghị Trung ương 2 (12-1996) đã xác định hai lĩnh vực nào là \"quốc sách hàng đầu\"?",
+        "Options": {
+          "A": "Kinh tế biển và Du lịch.",
+          "B": "Quốc phòng và An ninh.",
+          "C": "Công nghiệp nặng và Giao thông vận tải.",
+          "D": "Giáo dục - đào tạo và Khoa học - công nghệ."
+        },
+        "CorrectAnswer": "D",
+        "SourceText": "Giải thích: Hội nghị TW 2 (khóa VIII) đã ban hành hai nghị quyết quan trọng, khẳng định giáo dục và khoa học là quốc sách hàng đầu. Vị trí trong nội dung: Mục 2 (Nội dung và Nhận thức mới) -> E. Về Văn hóa, Giáo dục, Khoa học: \"Hội nghị Trung ương 2 (12-1996): Ban hành hai nghị quyết quan trọng, nhấn mạnh coi giáo dục-đào tạo cùng với khoa học và công nghệ là quốc sách hàng đầu.\""
+      },
+      {
+        "QuestionNumber": 10,
+        "Question": "Nghị quyết Hội nghị Trung ương 5 (7-1998) khẳng định \"Văn hóa là...\" gì?",
+        "Options": {
+          "A": "Nền tảng tinh thần của xã hội, vừa là mục tiêu vừa là động lực.",
+          "B": "Một lĩnh vực dịch vụ để phát triển kinh tế du lịch.",
+          "C": "Yếu tố thứ yếu sau phát triển kinh tế và quốc phòng.",
+          "D": "Phương tiện để tuyên truyền, cổ động."
+        },
+        "CorrectAnswer": "A",
+        "SourceText": "Giải thích: - Đây là quan điểm cốt lõi trong Nghị quyết TW 5 (khóa VIII) về xây dựng nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc. Vị trí trong nội dung: Mục 2 (Nội dung và Nhận thức mới.) -> E. Về Văn hóa, Giáo dục, Khoa học -> Ý \"Quan điểm\": \"Văn hóa là nền tảng tinh thần của xã hội, vừa là mục tiêu vừa là động lực thúc đẩy sự phát triển kinh tế-xã hội.\""
+      }
+    ]
+  }
+]

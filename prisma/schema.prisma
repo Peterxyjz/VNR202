@@ -1,0 +1,57 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Question {
+  id        String     @id @default(uuid())
+  title     String
+  content   String
+  guestName String
+  guestId   String
+  daiHoiTag String
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  answers   Answer[]
+  reactions Reaction[]
+
+  @@index([daiHoiTag])
+  @@index([createdAt])
+  @@map("questions")
+}
+
+model Answer {
+  id         String     @id @default(uuid())
+  content    String
+  guestName  String
+  guestId    String
+  questionId String
+  createdAt  DateTime   @default(now())
+  updatedAt  DateTime   @updatedAt
+  question   Question   @relation(fields: [questionId], references: [id], onDelete: Cascade)
+  reactions  Reaction[]
+
+  @@index([questionId])
+  @@index([createdAt])
+  @@map("answers")
+}
+
+model Reaction {
+  id         String    @id @default(uuid())
+  emoji      String
+  guestId    String
+  questionId String?
+  answerId   String?
+  createdAt  DateTime  @default(now())
+  answer     Answer?   @relation(fields: [answerId], references: [id], onDelete: Cascade)
+  question   Question? @relation(fields: [questionId], references: [id], onDelete: Cascade)
+
+  @@unique([guestId, emoji, questionId, answerId])
+  @@index([questionId])
+  @@index([answerId])
+  @@map("reactions")
+}
