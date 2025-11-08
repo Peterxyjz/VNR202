@@ -8,7 +8,9 @@ interface DaiHoiListClientProps {
   daiHoiList: DaiHoiData[];
 }
 
-export default function DaiHoiListClient({ daiHoiList }: DaiHoiListClientProps) {
+export default function DaiHoiListClient({
+  daiHoiList,
+}: DaiHoiListClientProps) {
   return (
     <div className="min-h-screen bg-gradient-to-b from-red-50 via-white to-gray-50">
       {/* Hero Section */}
@@ -156,9 +158,7 @@ export default function DaiHoiListClient({ daiHoiList }: DaiHoiListClientProps) 
                   {/* Card content */}
                   <div className="relative bg-white rounded-3xl shadow-xl group-hover:shadow-2xl transition-all overflow-hidden h-full">
                     {/* Animated gradient overlay */}
-                    <motion.div
-                      className="absolute inset-0 bg-gradient-to-br from-red-50 via-transparent to-yellow-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                    />
+                    <motion.div className="absolute inset-0 bg-gradient-to-br from-red-50 via-transparent to-yellow-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                     {/* Hero Image */}
                     {daiHoi.heroImage && (
@@ -213,18 +213,25 @@ export default function DaiHoiListClient({ daiHoiList }: DaiHoiListClientProps) 
                           Điểm nổi bật
                         </p>
                         <ul className="space-y-1">
-                          {daiHoi.contentHighlights.slice(0, 2).map((highlight, idx) => (
-                            <li
-                              key={idx}
-                              className="text-sm text-gray-700 flex items-start gap-2"
-                            >
-                              <span className="text-red-600 mt-0.5 flex-shrink-0">▸</span>
-                              <span className="line-clamp-1">{highlight.title}</span>
-                            </li>
-                          ))}
+                          {daiHoi.contentHighlights
+                            .slice(0, 2)
+                            .map((highlight, idx) => (
+                              <li
+                                key={idx}
+                                className="text-sm text-gray-700 flex items-start gap-2"
+                              >
+                                <span className="text-red-600 mt-0.5 flex-shrink-0">
+                                  ▸
+                                </span>
+                                <span className="line-clamp-1">
+                                  {highlight.title}
+                                </span>
+                              </li>
+                            ))}
                           {daiHoi.contentHighlights.length > 2 && (
                             <li className="text-xs text-gray-500 italic ml-4">
-                              +{daiHoi.contentHighlights.length - 2} nội dung khác...
+                              +{daiHoi.contentHighlights.length - 2} nội dung
+                              khác...
                             </li>
                           )}
                         </ul>
@@ -282,20 +289,20 @@ export default function DaiHoiListClient({ daiHoiList }: DaiHoiListClientProps) 
               Kiểm tra kiến thức của bạn
             </h2>
             <p className="text-xl mb-8 text-red-100">
-              Làm bài quiz về các kỳ Đại hội để hiểu rõ hơn về lịch sử
+              Tham gia câu đố về các kỳ Đại hội để hiểu rõ hơn về lịch sử
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
                 href="/quiz"
                 className="bg-white text-red-600 px-8 py-4 rounded-xl font-bold shadow-lg hover:shadow-xl hover:scale-105 transition-all"
               >
-                📝 Làm bài Quiz
+                📝 Tham gia câu đố
               </Link>
               <Link
                 href="/forum"
                 className="bg-red-800 text-white border-2 border-white px-8 py-4 rounded-xl font-bold shadow-lg hover:shadow-xl hover:scale-105 transition-all"
               >
-                💬 Thảo luận tại Forum
+                💬 Thảo luận tại diễn đàn
               </Link>
             </div>
           </div>

@@ -116,7 +116,7 @@ export default function HomeClient({ daiHoiList }: HomeClientProps) {
               />
 
               <motion.h1
-                className="text-6xl md:text-8xl lg:text-9xl font-black relative"
+                className="text-6xl md:text-8xl lg:text-9xl font-black relative space-y-4"
                 style={{
                   textShadow:
                     "3px 3px 12px rgba(0,0,0,0.5), 0 0 60px rgba(255,237,88,0.4)",
@@ -126,10 +126,10 @@ export default function HomeClient({ daiHoiList }: HomeClientProps) {
                   initial={{ opacity: 0, y: -30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.4 }}
-                  className="relative inline-block"
+                  className="relative"
                 >
                   <motion.span
-                    className="block text-yellow-300 mb-2"
+                    className="block text-yellow-300 mb-6 md:mb-8"
                     animate={{
                       textShadow: [
                         "3px 3px 12px rgba(0,0,0,0.5)",
@@ -141,19 +141,22 @@ export default function HomeClient({ daiHoiList }: HomeClientProps) {
                       duration: 2,
                       repeat: Infinity,
                     }}
+                    style={{
+                      lineHeight: "1.2",
+                    }}
                   >
                     35 NĂM
                   </motion.span>
                   {/* Decorative stars around number */}
                   <motion.span
-                    className="absolute -left-8 top-0 text-yellow-400 text-3xl"
+                    className="absolute -left-6 md:-left-8 top-0 text-yellow-400 text-2xl md:text-3xl"
                     animate={{ rotate: 360, scale: [1, 1.2, 1] }}
                     transition={{ duration: 3, repeat: Infinity }}
                   >
                     ★
                   </motion.span>
                   <motion.span
-                    className="absolute -right-8 top-0 text-yellow-400 text-3xl"
+                    className="absolute -right-6 md:-right-8 top-0 text-yellow-400 text-2xl md:text-3xl"
                     animate={{ rotate: -360, scale: [1, 1.2, 1] }}
                     transition={{ duration: 3, repeat: Infinity, delay: 0.5 }}
                   >
@@ -165,12 +168,13 @@ export default function HomeClient({ daiHoiList }: HomeClientProps) {
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.6 }}
-                  className="block text-white leading-none tracking-wider"
+                  className="block text-white mt-4 md:mt-6"
                   style={{
                     fontFamily:
                       "'Poppins', 'Inter', 'Noto Sans', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
                     fontWeight: 900,
                     letterSpacing: "0.15em",
+                    lineHeight: "1.2",
                   }}
                 >
                   ĐỔI MỚI

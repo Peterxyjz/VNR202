@@ -84,25 +84,45 @@ export default function NotFound() {
             <li className="flex items-start">
               <span className="text-blue-600 mr-2">•</span>
               <span>
-                Xem các <Link href="/" className="text-red-600 hover:underline">Đại hội</Link> trên trang chủ
+                Xem các{" "}
+                <Link href="/" className="text-red-600 hover:underline">
+                  Đại hội
+                </Link>{" "}
+                trên trang chủ
               </span>
             </li>
             <li className="flex items-start">
               <span className="text-blue-600 mr-2">•</span>
               <span>
-                Làm <Link href="/quiz" className="text-red-600 hover:underline">bài Quiz</Link> để kiểm tra kiến thức
+                Làm{" "}
+                <Link href="/quiz" className="text-red-600 hover:underline">
+                  Câu đố
+                </Link>{" "}
+                để kiểm tra kiến thức
               </span>
             </li>
             <li className="flex items-start">
               <span className="text-blue-600 mr-2">•</span>
               <span>
-                Khám phá <Link href="/dong-chay-chu-de" className="text-red-600 hover:underline">Dòng chảy chủ đề</Link>
+                Khám phá{" "}
+                <Link
+                  href="/dong-chay-chu-de"
+                  className="text-red-600 hover:underline"
+                >
+                  Dòng chảy chủ đề
+                </Link>
               </span>
             </li>
             <li className="flex items-start">
               <span className="text-blue-600 mr-2">•</span>
               <span>
-                Tìm hiểu thêm tại <Link href="/gioi-thieu" className="text-red-600 hover:underline">Giới thiệu</Link>
+                Tìm hiểu thêm tại{" "}
+                <Link
+                  href="/gioi-thieu"
+                  className="text-red-600 hover:underline"
+                >
+                  Giới thiệu
+                </Link>
               </span>
             </li>
           </ul>

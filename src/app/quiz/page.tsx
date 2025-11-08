@@ -3,7 +3,7 @@ import QuizPageClient from "./QuizPageClient";
 
 export const metadata = {
   title: "Quiz - Kiểm tra kiến thức | Hành trình Đổi Mới",
-  description: "Làm bài quiz để kiểm tra kiến thức về các kỳ Đại hội Đảng",
+  description: "Tham gia câu đố để kiểm tra kiến thức về các kỳ Đại hội Đảng",
 };
 
 export default function QuizIndexPage() {

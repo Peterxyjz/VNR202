@@ -24,10 +24,10 @@ export default function DaiHoiDetailClient({
   return (
     <div className="min-h-screen bg-gradient-to-b from-red-50 via-white to-gray-50">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-red-900 via-red-700 to-red-600 text-white py-16 px-4 overflow-hidden">
-        {/* Animated background */}
+      <section className="relative bg-gradient-to-br from-red-900 via-red-700 to-red-600 text-white py-20 px-4 overflow-hidden">
+        {/* Animated background pattern */}
         <div className="absolute inset-0 opacity-10">
-          {[...Array(20)].map((_, i) => (
+          {[...Array(15)].map((_, i) => (
             <motion.div
               key={i}
               className="absolute"
@@ -36,9 +36,9 @@ export default function DaiHoiDetailClient({
                 left: `${Math.random() * 100}%`,
               }}
               animate={{
-                y: [0, -20, 0],
+                y: [0, -30, 0],
                 rotate: 360,
-                scale: [1, 1.3, 1],
+                scale: [1, 1.2, 1],
               }}
               transition={{
                 duration: 10 + Math.random() * 10,
@@ -46,7 +46,7 @@ export default function DaiHoiDetailClient({
                 delay: i * 0.3,
               }}
             >
-              <svg width="25" height="25" viewBox="0 0 100 100">
+              <svg width="30" height="30" viewBox="0 0 100 100">
                 <path
                   d="M50 10 L61 39 L92 39 L67 57 L78 86 L50 68 L22 86 L33 57 L8 39 L39 39 Z"
                   fill="#fef08a"
@@ -134,20 +134,8 @@ export default function DaiHoiDetailClient({
           </motion.div>
         </div>
 
-        {/* Wave decoration */}
-        <div className="absolute bottom-0 left-0 right-0">
-          <svg
-            viewBox="0 0 1440 120"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-full h-auto"
-          >
-            <path
-              d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z"
-              fill="rgb(254, 242, 242)"
-            />
-          </svg>
-        </div>
+        {/* Bottom wave */}
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-red-50 to-transparent" />
       </section>
 
       {/* Main Content */}
@@ -488,7 +476,7 @@ export default function DaiHoiDetailClient({
                 Kiểm tra kiến thức của bạn
               </h3>
               <p className="text-xl mb-8 text-red-100">
-                Làm bài quiz về Đại hội {daiHoi.id} để hiểu rõ hơn
+                Tham gia câu đố về Đại hội {daiHoi.id} để hiểu rõ hơn
               </p>
 
               <div className="flex flex-wrap justify-center gap-4">
@@ -496,7 +484,7 @@ export default function DaiHoiDetailClient({
                   href={`/quiz/${daiHoi.id}`}
                   className="bg-white text-red-600 px-8 py-4 rounded-xl font-bold shadow-lg hover:shadow-xl hover:scale-105 transition-all inline-flex items-center gap-2"
                 >
-                  <span>Làm bài Quiz ngay</span>
+                  <span>Tham gia câu đố ngay</span>
                   <span>→</span>
                 </Link>
                 <Link
@@ -504,7 +492,7 @@ export default function DaiHoiDetailClient({
                   className="bg-red-900 text-white border-2 border-white px-8 py-4 rounded-xl font-bold shadow-lg hover:shadow-xl hover:scale-105 transition-all inline-flex items-center gap-2"
                 >
                   <span>💬</span>
-                  <span>Thảo luận tại Forum</span>
+                  <span>Thảo luận tại diễn đàn</span>
                 </Link>
               </div>
             </div>
