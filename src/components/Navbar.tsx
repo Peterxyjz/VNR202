@@ -8,9 +8,12 @@ import { useState } from "react";
 export default function Navbar() {
   const pathname = usePathname();
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
+  const isHomePage = pathname === "/";
 
   const navItems = [
     { href: "/", label: "Trang chủ" },
+    { href: "/dai-hoi", label: "Đại hội" },
+    { href: "/dong-chay-chu-de", label: "Chủ đề" },
     { href: "/quiz", label: "Câu đố" },
     { href: "/forum", label: "Diễn đàn" },
     { href: "/gioi-thieu", label: "Giới thiệu" },
@@ -21,7 +24,11 @@ export default function Navbar() {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className="bg-gradient-to-r from-red-700 via-red-600 to-red-700 text-white shadow-xl sticky top-0 z-50 backdrop-blur-sm"
+      className={`text-white shadow-xl sticky top-0 z-50 backdrop-blur-sm ${
+        isHomePage
+          ? "bg-red-700/80"
+          : "bg-gradient-to-r from-red-700 via-red-600 to-red-700"
+      }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">

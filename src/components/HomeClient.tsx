@@ -12,7 +12,7 @@ export default function HomeClient({ daiHoiList }: HomeClientProps) {
   return (
     <div className="min-h-screen bg-gradient-to-b from-red-50 via-white to-gray-50 overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative h-[93vh] flex items-center justify-center px-4 overflow-hidden bg-gradient-to-br from-red-900 via-red-700 to-yellow-600">
+      <section className="relative h-screen flex items-center justify-center px-4 overflow-hidden bg-gradient-to-br from-red-900 via-red-700 to-yellow-600 -mt-16 pt-16">
         {/* Animated Vietnamese star pattern */}
         <div className="absolute inset-0 opacity-5">
           {[...Array(20)].map((_, i) => (
@@ -238,7 +238,7 @@ export default function HomeClient({ daiHoiList }: HomeClientProps) {
             </motion.div>
 
             {/* Subtitle with animation */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 1.3 }}
@@ -260,7 +260,7 @@ export default function HomeClient({ daiHoiList }: HomeClientProps) {
               >
                 Từ Đổi Mới đến Công nghiệp hóa - Hiện đại hóa
               </motion.p>
-            </motion.div>
+            </motion.div> */}
 
             {/* Large Vietnamese star emblem */}
             <motion.div
@@ -778,10 +778,83 @@ export default function HomeClient({ daiHoiList }: HomeClientProps) {
 
           <div className="flex flex-wrap justify-center gap-8">
             <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 }}
+              whileHover={{ scale: 1.08, y: -5 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              <Link
+                href="/dong-chay-chu-de"
+                className="group relative inline-block overflow-hidden rounded-2xl shadow-2xl"
+              >
+                {/* Animated gradient background */}
+                <motion.div
+                  animate={{
+                    backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+                  }}
+                  transition={{
+                    duration: 5,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }}
+                  className="absolute inset-0 bg-gradient-to-r from-yellow-600 via-orange-500 to-red-600 bg-[length:200%_100%]"
+                />
+
+                {/* Shimmer effect */}
+                <motion.div
+                  animate={{
+                    x: ["-100%", "200%"],
+                  }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    repeatDelay: 2,
+                  }}
+                  className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-12"
+                />
+
+                <div className="relative px-10 py-5 flex items-center gap-3">
+                  <motion.span
+                    animate={{ rotate: 360 }}
+                    transition={{
+                      duration: 3,
+                      repeat: Infinity,
+                      ease: "linear",
+                    }}
+                    className="text-3xl"
+                  >
+                    ⚡
+                  </motion.span>
+                  <div className="text-left">
+                    <div className="text-white font-black text-xl tracking-wide">
+                      Dòng chảy Chủ đề
+                    </div>
+                    <div className="text-yellow-100 text-xs font-medium">
+                      Xem sự phát triển qua các kỳ
+                    </div>
+                  </div>
+                  <motion.span
+                    animate={{ x: [0, 8, 0] }}
+                    transition={{
+                      duration: 1.5,
+                      repeat: Infinity,
+                      repeatDelay: 0.5,
+                    }}
+                    className="text-white text-2xl font-bold ml-2"
+                  >
+                    →
+                  </motion.span>
+                </div>
+              </Link>
+            </motion.div>
+
+            <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: 0.3 }}
+              transition={{ delay: 0.4 }}
               whileHover={{ scale: 1.08, y: -5 }}
               whileTap={{ scale: 0.98 }}
             >
@@ -844,7 +917,7 @@ export default function HomeClient({ daiHoiList }: HomeClientProps) {
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: 0.4 }}
+              transition={{ delay: 0.5 }}
               whileHover={{ scale: 1.08, y: -5 }}
               whileTap={{ scale: 0.98 }}
             >

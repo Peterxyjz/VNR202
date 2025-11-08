@@ -1,10 +1,37 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { useState, useEffect } from "react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Chỉ hiện nút khi:
+      // 1. Trang cao hơn viewport (document.body.scrollHeight > window.innerHeight)
+      // 2. Đã scroll xuống ít nhất 300px
+      const shouldShow =
+        document.body.scrollHeight > window.innerHeight &&
+        window.scrollY > 300;
+      setShowScrollTop(shouldShow);
+    };
+
+    // Check ngay khi mount
+    handleScroll();
+
+    // Listen scroll events
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    // Listen resize để cập nhật khi window resize
+    window.addEventListener("resize", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
+    };
+  }, []);
 
   const footerLinks = [
     {
@@ -198,30 +225,35 @@ export default function Footer() {
           </div>
         </motion.div>
 
-        {/* Scroll to top button */}
-        <motion.button
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          whileHover={{ scale: 1.1, y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          className="fixed bottom-8 right-8 bg-red-600 hover:bg-red-700 text-white p-3 rounded-full shadow-lg transition-colors z-40"
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1 }}
-        >
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M5 10l7-7m0 0l7 7m-7-7v18"
-            />
-          </svg>
-        </motion.button>
+        {/* Scroll to top button - chỉ hiện khi cần */}
+        <AnimatePresence>
+          {showScrollTop && (
+            <motion.button
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              whileHover={{ scale: 1.1, y: -2 }}
+              whileTap={{ scale: 0.9 }}
+              className="fixed bottom-8 right-8 bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 text-white p-4 rounded-full shadow-2xl hover:shadow-red-500/50 transition-all z-40"
+              initial={{ opacity: 0, y: 100, scale: 0.5 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: 100, scale: 0.5 }}
+              transition={{ type: "spring", stiffness: 260, damping: 20 }}
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2.5}
+                  d="M5 10l7-7m0 0l7 7m-7-7v18"
+                />
+              </svg>
+            </motion.button>
+          )}
+        </AnimatePresence>
       </motion.div>
 
       {/* Animated wave effect at top */}

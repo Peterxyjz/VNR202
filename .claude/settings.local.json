@@ -1,6 +1,12 @@
 {
   "permissions": {
-    "allow": ["Bash(pnpm install:*)"],
+    "allow": [
+      "Bash(pnpm install:*)",
+      "Bash(cat:*)",
+      "Bash(pnpm add:*)",
+      "Bash(dir:*)",
+      "Bash(pnpm run build:*)"
+    ],
     "deny": [],
     "ask": []
   }
