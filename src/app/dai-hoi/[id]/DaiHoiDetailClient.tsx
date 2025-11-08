@@ -422,7 +422,7 @@ export default function DaiHoiDetailClient({
               </Link>
             ) : (
               <div className="bg-gray-50 rounded-2xl p-6 border-2 border-dashed border-gray-300 flex items-center justify-center text-gray-400">
-                <p className="text-sm font-semibold">Đây là đại hội đầu tiên</p>
+                <p className="text-sm font-semibold"></p>
               </div>
             )}
 
@@ -448,7 +448,7 @@ export default function DaiHoiDetailClient({
               </Link>
             ) : (
               <div className="bg-gray-50 rounded-2xl p-6 border-2 border-dashed border-gray-300 flex items-center justify-center text-gray-400">
-                <p className="text-sm font-semibold">Đây là đại hội mới nhất</p>
+                <p className="text-sm font-semibold"></p>
               </div>
             )}
           </div>

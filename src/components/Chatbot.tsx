@@ -266,10 +266,10 @@ export default function Chatbot() {
                   className={`max-w-[85%] rounded-2xl px-4 py-3 ${
                     msg.role === "user"
                       ? "bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-lg shadow-blue-500/30"
-                      : "bg-white border border-gray-200 shadow-sm"
+                      : "bg-white border border-gray-200 shadow-sm text-gray-700"
                   }`}
                 >
-                  <div className="whitespace-pre-wrap text-sm leading-relaxed">
+                  <div className="whitespace-pre-wrap text-sm leading-relaxed ">
                     {msg.content}
                   </div>
                   <div
@@ -289,15 +289,15 @@ export default function Chatbot() {
             {isLoading && (
               <div className="flex justify-start animate-in slide-in-from-bottom-2 duration-300">
                 <div className="bg-white border border-gray-200 rounded-2xl px-4 py-3 shadow-sm">
-                  <div className="flex items-center gap-2 text-sm text-gray-600">
+                  <div className="flex items-center gap-2 text-sm text-gray-700">
                     <div className="flex gap-1">
-                      <span className="w-2 h-2 bg-blue-600 rounded-full animate-bounce"></span>
+                      <span className="text-gray-700 w-2 h-2 bg-blue-600 rounded-full animate-bounce"></span>
                       <span
-                        className="w-2 h-2 bg-blue-600 rounded-full animate-bounce"
+                        className="text-gray-700 w-2 h-2 bg-blue-600 rounded-full animate-bounce"
                         style={{ animationDelay: "0.2s" }}
                       ></span>
                       <span
-                        className="w-2 h-2 bg-blue-600 rounded-full animate-bounce"
+                        className="text-gray-700 w-2 h-2 bg-blue-600 rounded-full animate-bounce"
                         style={{ animationDelay: "0.4s" }}
                       ></span>
                     </div>
@@ -307,7 +307,7 @@ export default function Chatbot() {
               </div>
             )}
 
-            <div ref={messagesEndRef} />
+            <div className="text-gray-700" ref={messagesEndRef} />
           </div>
 
           {/* Input Area */}
