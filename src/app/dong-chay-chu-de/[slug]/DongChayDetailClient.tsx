@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import MarkdownContent from "@/components/MarkdownContent";
 
 interface TimelineItem {
   daiHoiId: string;
@@ -121,9 +122,9 @@ export default function DongChayDetailClient({
                 <h1 className="text-4xl md:text-5xl font-black mb-4 leading-tight">
                   {theme.title}
                 </h1>
-                <p className="text-xl text-red-100 leading-relaxed">
-                  {theme.description}
-                </p>
+                <div className="text-xl text-red-100">
+                  <MarkdownContent content={theme.description} className="text-red-100" />
+                </div>
               </div>
             </div>
           </motion.div>
@@ -207,9 +208,9 @@ export default function DongChayDetailClient({
                     </div>
 
                     {/* Content */}
-                    <p className="relative z-10 text-gray-700 leading-relaxed text-lg mb-6">
-                      {item.snippet}
-                    </p>
+                    <div className="relative z-10 text-gray-700 text-lg mb-6">
+                      <MarkdownContent content={item.snippet} />
+                    </div>
 
                     {/* Link to Detail */}
                     <Link

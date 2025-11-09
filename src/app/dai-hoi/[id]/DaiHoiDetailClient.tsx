@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import type { DaiHoiData } from "@/lib/data-loaders";
+import MarkdownContent from "@/components/MarkdownContent";
 
 interface DaiHoiDetailClientProps {
   daiHoi: DaiHoiData;
@@ -159,16 +160,16 @@ export default function DaiHoiDetailClient({
           <div className="bg-white rounded-2xl shadow-xl p-8 border-l-4 border-red-600">
             <div className="space-y-4">
               {daiHoi.context.map((paragraph, index) => (
-                <motion.p
+                <motion.div
                   key={index}
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="text-gray-700 leading-relaxed text-justify text-lg"
+                  className="text-gray-700 text-justify text-lg"
                 >
-                  {paragraph}
-                </motion.p>
+                  <MarkdownContent content={paragraph} />
+                </motion.div>
               ))}
             </div>
           </div>
@@ -217,9 +218,9 @@ export default function DaiHoiDetailClient({
                     <h3 className="text-xl font-bold text-red-700 mb-3 group-hover:text-red-600 transition-colors">
                       {highlight.title}
                     </h3>
-                    <p className="text-gray-700 leading-relaxed">
-                      {highlight.description}
-                    </p>
+                    <div className="text-gray-700">
+                      <MarkdownContent content={highlight.description} />
+                    </div>
                   </div>
 
                   {/* Decorative element */}
@@ -251,16 +252,16 @@ export default function DaiHoiDetailClient({
           <div className="bg-gradient-to-br from-white to-red-50 rounded-2xl shadow-xl p-8 border-l-4 border-yellow-500">
             <div className="space-y-4">
               {daiHoi.fullContentSummary.map((paragraph, index) => (
-                <motion.p
+                <motion.div
                   key={index}
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="text-gray-700 leading-relaxed text-justify text-lg"
+                  className="text-gray-700 text-justify text-lg"
                 >
-                  {paragraph}
-                </motion.p>
+                  <MarkdownContent content={paragraph} />
+                </motion.div>
               ))}
             </div>
           </div>
@@ -292,16 +293,16 @@ export default function DaiHoiDetailClient({
 
             <div className="relative z-10 space-y-4">
               {daiHoi.significance.map((paragraph, index) => (
-                <motion.p
+                <motion.div
                   key={index}
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="text-yellow-50 leading-relaxed text-justify text-lg font-medium"
+                  className="text-yellow-50 text-justify text-lg font-medium"
                 >
-                  {paragraph}
-                </motion.p>
+                  <MarkdownContent content={paragraph} className="text-yellow-50" />
+                </motion.div>
               ))}
             </div>
           </div>

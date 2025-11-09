@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { DaiHoiData } from '@/lib/data-loaders';
+import MarkdownContent from '@/components/MarkdownContent';
 
 interface SummaryNotesProps {
   daiHoiData: { [key: string]: DaiHoiData };
@@ -164,7 +165,9 @@ export default function SummaryNotes({ daiHoiData }: SummaryNotesProps) {
                     {data.context.map((ctx, i) => (
                       <li key={i} className="flex gap-2">
                         <span className="text-red-600 font-bold">•</span>
-                        <span>{ctx}</span>
+                        <div className="flex-1">
+                          <MarkdownContent content={ctx} />
+                        </div>
                       </li>
                     ))}
                   </ul>
@@ -197,9 +200,9 @@ export default function SummaryNotes({ daiHoiData }: SummaryNotesProps) {
                         <h5 className="font-semibold text-gray-800 mb-1">
                           {i + 1}. {highlight.title}
                         </h5>
-                        <p className="text-sm text-gray-600">
-                          {highlight.description}
-                        </p>
+                        <div className="text-sm text-gray-600">
+                          <MarkdownContent content={highlight.description} />
+                        </div>
                       </div>
                     ))}
                   </div>
@@ -227,7 +230,9 @@ export default function SummaryNotes({ daiHoiData }: SummaryNotesProps) {
                     {data.significance.map((sig, i) => (
                       <li key={i} className="flex gap-2">
                         <span className="text-green-600 font-bold">•</span>
-                        <span>{sig}</span>
+                        <div className="flex-1">
+                          <MarkdownContent content={sig} />
+                        </div>
                       </li>
                     ))}
                   </ul>

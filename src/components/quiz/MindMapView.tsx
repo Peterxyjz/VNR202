@@ -16,6 +16,7 @@ import ReactFlow, {
 } from 'reactflow';
 import 'reactflow/dist/style.css';
 import { DaiHoiData } from '@/lib/data-loaders';
+import MarkdownContent from '@/components/MarkdownContent';
 
 interface CustomNodeData {
   label: string;
@@ -49,7 +50,9 @@ function CustomNode({ data }: { data: CustomNodeData }) {
     >
       <div className="font-bold text-sm mb-1">{data.label}</div>
       {data.description && (
-        <div className="text-xs opacity-90 line-clamp-2">{data.description}</div>
+        <div className="text-xs opacity-90 line-clamp-2">
+          <MarkdownContent content={data.description} />
+        </div>
       )}
     </div>
   );
