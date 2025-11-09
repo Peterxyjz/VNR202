@@ -2,7 +2,7 @@ import { prisma } from "@/lib/prisma";
 import ForumPageClient from "./ForumPageClient";
 
 export const metadata = {
-  title: "Forum Q&A | Hành trình Đổi Mới",
+  title: "Hỏi đáp | Hành trình Đổi Mới",
   description: "Diễn đàn hỏi đáp về lịch sử các kỳ Đại hội Đảng",
 };
 

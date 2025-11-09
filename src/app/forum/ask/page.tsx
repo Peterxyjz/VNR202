@@ -2,7 +2,7 @@ import Link from "next/link";
 import QuestionForm from "@/components/QuestionForm";
 
 export const metadata = {
-  title: "Đặt câu hỏi mới | Forum Q&A",
+  title: "Đặt câu hỏi mới | Hỏi đáp",
   description: "Đặt câu hỏi mới về các kỳ Đại hội Đảng",
 };
 

@@ -14,8 +14,7 @@ export default function Footer() {
       // 1. Trang cao hơn viewport (document.body.scrollHeight > window.innerHeight)
       // 2. Đã scroll xuống ít nhất 300px
       const shouldShow =
-        document.body.scrollHeight > window.innerHeight &&
-        window.scrollY > 300;
+        document.body.scrollHeight > window.innerHeight && window.scrollY > 300;
       setShowScrollTop(shouldShow);
     };
 
@@ -39,7 +38,7 @@ export default function Footer() {
       links: [
         { href: "/", label: "Trang chủ" },
         { href: "/quiz", label: "Quiz" },
-        { href: "/forum", label: "Forum Q&A" },
+        { href: "/forum", label: "Hỏi đáp" },
         { href: "/gioi-thieu", label: "Giới thiệu" },
       ],
     },

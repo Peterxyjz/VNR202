@@ -131,7 +131,7 @@ export default function DaiHoiListClient({
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-3">
-            Khám phá {daiHoiList.length} kỳ Đại hội lịch sử
+            Khám phá các kỳ Đại hội lịch sử
           </h2>
           <p className="text-gray-600 text-lg">
             Từ Đại hội VII (1991) đến Đại hội XIII (2021)

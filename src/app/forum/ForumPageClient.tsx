@@ -88,7 +88,7 @@ export default function ForumPageClient({ questions }: ForumPageClientProps) {
         {/* Header */}
         <div className="mb-8">
           <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text text-transparent mb-4">
-            Forum Q&A
+            Hỏi đáp
           </h1>
           <p className="text-lg text-gray-700 mb-6">
             Diễn đàn hỏi đáp và thảo luận về các kỳ Đại hội Đảng

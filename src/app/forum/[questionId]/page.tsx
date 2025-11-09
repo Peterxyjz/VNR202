@@ -33,7 +33,7 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${question.title} | Forum Q&A`,
+    title: `${question.title} | Hỏi đáp`,
     description: question.content.substring(0, 150),
   };
 }

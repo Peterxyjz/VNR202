@@ -65,7 +65,7 @@ export default function DaiHoiDetailClient({
             className="flex justify-between items-center mb-8"
           >
             <Link
-              href="/dai-hoi"
+              href="/"
               className="inline-flex items-center text-white/90 hover:text-white transition-colors group"
             >
               <motion.svg
@@ -82,14 +82,14 @@ export default function DaiHoiDetailClient({
                   d="M15 19l-7-7 7-7"
                 />
               </motion.svg>
-              <span className="font-semibold">Tất cả đại hội</span>
+              <span className="font-semibold">Trang chủ</span>
             </Link>
 
             <Link
-              href="/"
+              href="/dai-hoi"
               className="text-white/80 hover:text-white transition-colors text-sm"
             >
-              Trang chủ
+              Tất cả các kỳ Đại hội →
             </Link>
           </motion.div>
 
@@ -301,7 +301,10 @@ export default function DaiHoiDetailClient({
                   transition={{ delay: index * 0.1 }}
                   className="text-yellow-50 text-justify text-lg font-medium"
                 >
-                  <MarkdownContent content={paragraph} className="text-yellow-50" />
+                  <MarkdownContent
+                    content={paragraph}
+                    className="text-yellow-50"
+                  />
                 </motion.div>
               ))}
             </div>

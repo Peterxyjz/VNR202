@@ -13,7 +13,7 @@ export default function Navbar() {
   const navItems = [
     { href: "/", label: "Trang chủ" },
     { href: "/dai-hoi", label: "Đại hội" },
-    { href: "/dong-chay-chu-de", label: "Chủ đề" },
+    // { href: "/dong-chay-chu-de", label: "Chủ đề" },
     { href: "/quiz", label: "Câu đố" },
     { href: "/forum", label: "Diễn đàn" },
     { href: "/gioi-thieu", label: "Giới thiệu" },

@@ -464,7 +464,8 @@ export default function HomeClient({ daiHoiList }: HomeClientProps) {
               transition={{ delay: 0.3 }}
               className="text-lg md:text-xl text-gray-700 font-semibold max-w-2xl mx-auto"
             >
-              Lịch sử phát triển qua các kỳ Đại hội từ VII đến XIII
+              Tiếp tục công cuộc đổi mới, đẩy mạnh công nghiệp hoá, <br />
+              hiện đại hoá và hội nhập quốc tế
             </motion.p>
             <motion.p
               initial={{ opacity: 0 }}
@@ -473,7 +474,7 @@ export default function HomeClient({ daiHoiList }: HomeClientProps) {
               transition={{ delay: 0.4 }}
               className="text-sm text-gray-500 mt-2"
             >
-              Khám phá những bước tiến lịch sử đưa đất nước vươn lên
+              (từ năm 1996 đến nay)
             </motion.p>
           </motion.div>
 
