@@ -13,6 +13,8 @@ import ReactFlow, {
   BackgroundVariant,
   MiniMap,
   NodeTypes,
+  Handle,
+  Position,
 } from 'reactflow';
 import 'reactflow/dist/style.css';
 import { DaiHoiData } from '@/lib/data-loaders';
@@ -24,6 +26,9 @@ interface CustomNodeData {
   expanded: boolean;
   daiHoiId: string;
   type: 'root' | 'daihoi' | 'highlight' | 'detail';
+  angle?: number;
+  x?: number;
+  y?: number;
 }
 
 // Custom Node Component
@@ -48,6 +53,12 @@ function CustomNode({ data }: { data: CustomNodeData }) {
         bgColors[data.type]
       } ${textColors[data.type]} min-w-[150px] max-w-[250px]`}
     >
+      {/* Add handles for connections */}
+      <Handle type="target" position={Position.Top} className="w-2 h-2" />
+      <Handle type="source" position={Position.Bottom} className="w-2 h-2" />
+      <Handle type="source" position={Position.Left} className="w-2 h-2" />
+      <Handle type="source" position={Position.Right} className="w-2 h-2" />
+
       <div className="font-bold text-sm mb-1">{data.label}</div>
       {data.description && (
         <div className="text-xs opacity-90 line-clamp-2">
@@ -69,8 +80,8 @@ interface MindMapViewProps {
 export default function MindMapView({ daiHoiData }: MindMapViewProps) {
   const [expandedNodes, setExpandedNodes] = useState<Set<string>>(new Set());
 
-  // Generate initial nodes and edges
-  const generateNodesAndEdges = useCallback(() => {
+  // Generate initial nodes and edges only once
+  const generateInitialNodesAndEdges = useCallback(() => {
     const nodes: Node[] = [];
     const edges: Edge[] = [];
 
@@ -105,9 +116,12 @@ export default function MindMapView({ daiHoiData }: MindMapViewProps) {
         data: {
           label: `Đại hội ${id}`,
           description: daiHoi.time,
-          expanded: expandedNodes.has(id),
+          expanded: false,
           daiHoiId: id,
           type: 'daihoi',
+          angle,
+          x,
+          y,
         },
         position: { x, y },
       });
@@ -119,43 +133,12 @@ export default function MindMapView({ daiHoiData }: MindMapViewProps) {
         animated: true,
         style: { stroke: '#ef4444', strokeWidth: 2 },
       });
-
-      // If expanded, add highlight nodes
-      if (expandedNodes.has(id)) {
-        daiHoi.contentHighlights.slice(0, 3).forEach((highlight, hIndex) => {
-          const highlightAngle = angle + (hIndex - 1) * 0.3;
-          const highlightRadius = 180;
-          const hx = x + highlightRadius * Math.cos(highlightAngle);
-          const hy = y + highlightRadius * Math.sin(highlightAngle);
-
-          nodes.push({
-            id: `highlight-${id}-${hIndex}`,
-            type: 'custom',
-            data: {
-              label: highlight.title,
-              description: highlight.description.substring(0, 50) + '...',
-              expanded: false,
-              daiHoiId: id,
-              type: 'highlight',
-            },
-            position: { x: hx, y: hy },
-          });
-
-          edges.push({
-            id: `edge-${id}-h${hIndex}`,
-            source: `daihoi-${id}`,
-            target: `highlight-${id}-${hIndex}`,
-            animated: false,
-            style: { stroke: '#10b981', strokeWidth: 1.5 },
-          });
-        });
-      }
     });
 
     return { nodes, edges };
-  }, [daiHoiData, expandedNodes]);
+  }, [daiHoiData]);
 
-  const { nodes: initialNodes, edges: initialEdges } = generateNodesAndEdges();
+  const { nodes: initialNodes, edges: initialEdges } = generateInitialNodesAndEdges();
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
 
@@ -168,25 +151,74 @@ export default function MindMapView({ daiHoiData }: MindMapViewProps) {
     (_event: React.MouseEvent, node: Node) => {
       const nodeData = node.data as CustomNodeData;
       if (nodeData.type === 'daihoi') {
-        setExpandedNodes((prev) => {
-          const newSet = new Set(prev);
-          if (newSet.has(nodeData.daiHoiId)) {
-            newSet.delete(nodeData.daiHoiId);
-          } else {
-            newSet.add(nodeData.daiHoiId);
-          }
-          return newSet;
-        });
+        const daiHoiId = nodeData.daiHoiId;
+        const isExpanded = expandedNodes.has(daiHoiId);
 
-        // Regenerate nodes and edges
-        setTimeout(() => {
-          const { nodes: newNodes, edges: newEdges } = generateNodesAndEdges();
-          setNodes(newNodes);
-          setEdges(newEdges);
-        }, 0);
+        if (isExpanded) {
+          // Collapse: Remove highlight nodes and edges
+          setNodes((nds) =>
+            nds.filter((n) => !n.id.startsWith(`highlight-${daiHoiId}-`))
+          );
+          setEdges((eds) =>
+            eds.filter(
+              (e) =>
+                !e.id.startsWith(`edge-${daiHoiId}-h`) &&
+                !e.target.startsWith(`highlight-${daiHoiId}-`)
+            )
+          );
+          setExpandedNodes((prev) => {
+            const newSet = new Set(prev);
+            newSet.delete(daiHoiId);
+            return newSet;
+          });
+        } else {
+          // Expand: Add highlight nodes and edges
+          const daiHoi = daiHoiData[daiHoiId];
+          const parentNode = nodes.find((n) => n.id === `daihoi-${daiHoiId}`);
+          if (!parentNode) return;
+
+          const angle = nodeData.angle || 0;
+          const x = nodeData.x || parentNode.position.x;
+          const y = nodeData.y || parentNode.position.y;
+
+          const newNodes: Node[] = [];
+          const newEdges: Edge[] = [];
+
+          daiHoi.contentHighlights.slice(0, 3).forEach((highlight, hIndex) => {
+            const highlightAngle = angle + (hIndex - 1) * 0.3;
+            const highlightRadius = 180;
+            const hx = x + highlightRadius * Math.cos(highlightAngle);
+            const hy = y + highlightRadius * Math.sin(highlightAngle);
+
+            newNodes.push({
+              id: `highlight-${daiHoiId}-${hIndex}`,
+              type: 'custom',
+              data: {
+                label: highlight.title,
+                description: highlight.description.substring(0, 50) + '...',
+                expanded: false,
+                daiHoiId,
+                type: 'highlight',
+              },
+              position: { x: hx, y: hy },
+            });
+
+            newEdges.push({
+              id: `edge-${daiHoiId}-h${hIndex}`,
+              source: `daihoi-${daiHoiId}`,
+              target: `highlight-${daiHoiId}-${hIndex}`,
+              animated: false,
+              style: { stroke: '#10b981', strokeWidth: 1.5 },
+            });
+          });
+
+          setNodes((nds) => [...nds, ...newNodes]);
+          setEdges((eds) => [...eds, ...newEdges]);
+          setExpandedNodes((prev) => new Set(prev).add(daiHoiId));
+        }
       }
     },
-    [generateNodesAndEdges, setNodes, setEdges]
+    [nodes, edges, expandedNodes, daiHoiData, setNodes, setEdges]
   );
 
   return (
