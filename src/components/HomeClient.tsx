@@ -378,9 +378,9 @@ export default function HomeClient({ daiHoiList }: HomeClientProps) {
         </motion.div>
       </section>
 
-      {/* Timeline Section - Horizontal */}
+      {/* Timeline Section - Vertical */}
       <section className="py-20 px-4 bg-gradient-to-b from-white to-red-50">
-        <div className="container mx-auto max-w-7xl">
+        <div className="container mx-auto max-w-4xl">
           {/* Header */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -407,127 +407,236 @@ export default function HomeClient({ daiHoiList }: HomeClientProps) {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="h-1 w-32 mx-auto mb-6 bg-gradient-to-r from-red-600 to-yellow-500 rounded-full"
             />
-
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.3 }}
-              className="text-lg text-gray-700 font-medium"
-            >
-              Tiếp tục công cuộc đổi mới, đẩy mạnh công nghiệp hoá, <br />
-              hiện đại hoá và hội nhập quốc tế
-            </motion.p>
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.4 }}
-              className="text-sm text-gray-500 mt-2"
-            >
-              (từ năm 1996 đến nay)
-            </motion.p>
           </motion.div>
 
-          {/* Horizontal Timeline */}
-          <div className="relative py-12">
-            {/* Decorative background pattern */}
-            <div className="absolute inset-0 opacity-5">
-              <div
-                className="w-full h-full"
-                style={{
-                  backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5l5 15h16l-13 9 5 15-13-9-13 9 5-15-13-9h16z' fill='%23dc2626' opacity='0.1'/%3E%3C/svg%3E")`,
-                  backgroundSize: "60px 60px",
-                }}
-              />
-            </div>
-
-            {/* Timeline items - Minimalist cards */}
-            <div className="relative grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-4 md:gap-6 px-4">
-              {daiHoiList.map((daiHoi, index) => (
-                <motion.div
-                  key={daiHoi.id}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{
-                    duration: 0.5,
-                    delay: index * 0.1,
-                  }}
-                >
-                  <Link href={`/dai-hoi/${daiHoi.id}`}>
-                    <motion.div
-                      whileHover={{ y: -10 }}
-                      transition={{ type: "spring", stiffness: 400 }}
-                      className="group cursor-pointer h-full"
-                    >
-                      {/* Main card */}
-                      <div className="relative bg-white rounded-2xl p-4 shadow-md hover:shadow-xl transition-all duration-300 border-2 border-red-100 hover:border-red-400 h-full flex flex-col">
-                        {/* Number badge - top right corner */}
-                        <div className="absolute -top-3 -right-3 w-10 h-10 bg-gradient-to-br from-red-600 to-red-700 rounded-full shadow-lg flex items-center justify-center transform group-hover:rotate-12 transition-transform">
-                          <span className="text-white text-sm font-black">
-                            {daiHoi.id}
-                          </span>
-                        </div>
-
-                        {/* Star icon */}
-                        <div className="flex justify-center mb-3">
-                          <motion.div
-                            animate={{
-                              rotate: [0, 10, -10, 0],
-                            }}
-                            transition={{
-                              duration: 3,
-                              repeat: Infinity,
-                              delay: index * 0.3,
-                            }}
-                            className="text-3xl"
-                          >
-                            ⭐
-                          </motion.div>
-                        </div>
-
-                        {/* Year */}
-                        <div className="text-center mb-3">
-                          <span className="inline-block bg-red-50 text-red-700 px-3 py-1 rounded-full text-xs font-bold whitespace-nowrap">
-                            {daiHoi.time}
-                          </span>
-                        </div>
-
-                        {/* Title */}
-                        <h3 className="text-center text-xs font-bold text-gray-700 leading-tight group-hover:text-red-600 transition-colors flex-1 flex items-center justify-center min-h-[2.5rem]">
-                          {daiHoi.title}
-                        </h3>
-
-                        {/* Decorative line at bottom */}
-                        <div className="mt-3 h-1 bg-gradient-to-r from-transparent via-red-500 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
-                      </div>
-                    </motion.div>
-                  </Link>
-                </motion.div>
-              ))}
-            </div>
-
-            {/* Bottom connecting line */}
+          {/* Vertical Timeline */}
+          <div className="relative">
+            {/* Vertical line */}
             <motion.div
-              initial={{ scaleX: 0 }}
-              whileInView={{ scaleX: 1 }}
+              initial={{ scaleY: 0 }}
+              whileInView={{ scaleY: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 1.5, delay: 0.5 }}
-              className="relative mt-8 h-1 bg-gradient-to-r from-red-200 via-red-500 to-yellow-400 rounded-full origin-left"
+              transition={{ duration: 1.5, delay: 0.3 }}
+              className="absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-red-300 via-red-500 to-yellow-400 origin-top -translate-x-1/2 z-10"
             >
               <motion.div
                 animate={{
-                  x: ["-100%", "100%"],
+                  y: ["-100%", "100%"],
                 }}
                 transition={{
                   duration: 3,
                   repeat: Infinity,
                   ease: "linear",
                 }}
-                className="absolute inset-0 w-1/3 bg-gradient-to-r from-transparent via-white to-transparent opacity-60"
+                className="absolute inset-0 w-full h-1/3 bg-gradient-to-b from-transparent via-white to-transparent opacity-60"
               />
             </motion.div>
+
+            {/* Timeline items */}
+            <div className="relative space-y-12">
+              {daiHoiList.map((daiHoi, index) => (
+                <div key={daiHoi.id} className="relative">
+                  <motion.div
+                    initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{
+                      duration: 0.6,
+                      delay: index * 0.1,
+                    }}
+                    className={`flex items-center gap-4 md:gap-8 ${
+                      index % 2 === 0 ? "flex-row" : "flex-row-reverse"
+                    }`}
+                  >
+                    {/* Card */}
+                    <div className="w-[calc(50%-1.5rem)] md:w-5/12">
+                      <Link href={`/dai-hoi/${daiHoi.id}`}>
+                        <motion.div
+                          whileHover={{ scale: 1.05, y: -5 }}
+                          transition={{ type: "spring", stiffness: 400 }}
+                          className="group cursor-pointer"
+                        >
+                          <div className="relative bg-white rounded-xl md:rounded-2xl p-3 md:p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-red-100 hover:border-red-400">
+                            {/* Number badge */}
+                            <div className="absolute -top-2 -right-2 md:-top-3 md:-right-3 w-8 h-8 md:w-12 md:h-12 bg-gradient-to-br from-red-600 to-red-700 rounded-full shadow-lg flex items-center justify-center transform group-hover:rotate-12 transition-transform z-10">
+                              <span className="text-white text-xs md:text-base font-black">
+                                {daiHoi.id}
+                              </span>
+                            </div>
+
+                            {/* Star icon */}
+                            <div className="flex justify-center mb-2 md:mb-4">
+                              <motion.div
+                                animate={{
+                                  rotate: [0, 10, -10, 0],
+                                }}
+                                transition={{
+                                  duration: 3,
+                                  repeat: Infinity,
+                                  delay: index * 0.3,
+                                }}
+                                className="text-2xl md:text-4xl"
+                              >
+                                ⭐
+                              </motion.div>
+                            </div>
+
+                            {/* Year */}
+                            <div className="text-center mb-2 md:mb-4">
+                              <span className="inline-block bg-red-50 text-red-700 px-2 py-1 md:px-4 md:py-2 rounded-full text-[10px] md:text-sm font-bold whitespace-nowrap">
+                                {daiHoi.time}
+                              </span>
+                            </div>
+
+                            {/* Title */}
+                            <h3 className="text-center text-[10px] md:text-sm font-bold text-gray-700 leading-tight group-hover:text-red-600 transition-colors min-h-[2rem] md:min-h-[3rem] flex items-center justify-center px-1">
+                              {daiHoi.title}
+                            </h3>
+
+                            {/* Decorative line at bottom */}
+                            <div className="mt-2 md:mt-4 h-0.5 md:h-1 bg-gradient-to-r from-transparent via-red-500 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
+                          </div>
+                        </motion.div>
+                      </Link>
+                    </div>
+
+                    {/* Empty space for alternating layout */}
+                    <div className="w-[calc(50%-1.5rem)] md:w-5/12" />
+                  </motion.div>
+
+                  {/* Center dot - positioned absolutely on timeline */}
+                  <motion.div
+                    initial={{ scale: 0 }}
+                    whileInView={{ scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{
+                      duration: 0.5,
+                      delay: index * 0.1 + 0.3,
+                      type: "spring",
+                      stiffness: 200,
+                    }}
+                    className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 md:w-6 md:h-6 bg-gradient-to-br from-red-600 to-red-700 rounded-full border-2 md:border-4 border-white shadow-lg z-20"
+                  >
+                    <motion.div
+                      animate={{
+                        scale: [1, 1.5, 1],
+                        opacity: [0.7, 0, 0.7],
+                      }}
+                      transition={{
+                        duration: 2,
+                        repeat: Infinity,
+                        delay: index * 0.3,
+                      }}
+                      className="absolute inset-0 bg-red-500 rounded-full"
+                    />
+                  </motion.div>
+
+                  {/* Separator after Đại hội VII */}
+                  {daiHoi.id === "VII" && (
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.6, delay: 0.2 }}
+                      className="relative py-12 my-8 z-30"
+                    >
+                      {/* Decorative background */}
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-red-50 to-transparent rounded-2xl -z-10" />
+
+                      {/* Center ornament on the timeline - behind text */}
+                      {/* <motion.div
+                        initial={{ scale: 0, rotate: -180 }}
+                        whileInView={{ scale: 1, rotate: 0 }}
+                        viewport={{ once: true }}
+                        transition={{
+                          duration: 0.8,
+                          delay: 0.4,
+                          type: "spring",
+                          stiffness: 200,
+                        }}
+                        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-yellow-400 to-red-600 rounded-full shadow-2xl flex items-center justify-center -z-5"
+                      >
+                        <motion.span
+                          animate={{ rotate: 360 }}
+                          transition={{
+                            duration: 20,
+                            repeat: Infinity,
+                            ease: "linear",
+                          }}
+                          className="text-2xl md:text-3xl"
+                        >
+                          ✨
+                        </motion.span>
+                      </motion.div> */}
+
+                      {/* Content */}
+                      <div className="relative text-center px-4 md:px-8 z-10">
+                        {/* Top decorative line */}
+                        <motion.div
+                          initial={{ scaleX: 0 }}
+                          whileInView={{ scaleX: 1 }}
+                          viewport={{ once: true }}
+                          transition={{ duration: 0.8, delay: 0.3 }}
+                          className="h-1 w-32 md:w-48 mx-auto mb-4 md:mb-6 bg-gradient-to-r from-red-600 to-yellow-500 rounded-full"
+                        />
+
+                        {/* Text */}
+                        <motion.p
+                          initial={{ opacity: 0, y: 20 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          viewport={{ once: true }}
+                          transition={{ delay: 0.4 }}
+                          className="text-sm md:text-lg lg:text-xl text-gray-700 font-bold leading-relaxed"
+                        >
+                          Tiếp tục công cuộc đổi mới, đẩy mạnh công nghiệp hoá,{" "}
+                          <br />
+                          hiện đại hoá và hội nhập quốc tế
+                        </motion.p>
+                        <motion.p
+                          initial={{ opacity: 0 }}
+                          whileInView={{ opacity: 1 }}
+                          viewport={{ once: true }}
+                          transition={{ delay: 0.5 }}
+                          className="text-xs md:text-sm text-gray-500 mt-2 md:mt-3"
+                        >
+                          (từ năm 1996 đến nay)
+                        </motion.p>
+
+                        {/* Bottom decorative line */}
+                        <motion.div
+                          initial={{ scaleX: 0 }}
+                          whileInView={{ scaleX: 1 }}
+                          viewport={{ once: true }}
+                          transition={{ duration: 0.8, delay: 0.6 }}
+                          className="h-1 w-32 md:w-48 mx-auto mt-4 md:mt-6 bg-gradient-to-r from-yellow-500 to-red-600 rounded-full"
+                        />
+
+                        {/* Decorative stars */}
+                        <div className="flex justify-center gap-3 md:gap-4 mt-4 md:mt-6">
+                          {[...Array(3)].map((_, i) => (
+                            <motion.div
+                              key={i}
+                              animate={{
+                                rotate: [0, 360],
+                                scale: [1, 1.2, 1],
+                              }}
+                              transition={{
+                                duration: 3,
+                                repeat: Infinity,
+                                delay: i * 0.3,
+                              }}
+                              className="text-xl md:text-2xl"
+                            >
+                              ⭐
+                            </motion.div>
+                          ))}
+                        </div>
+                      </div>
+                    </motion.div>
+                  )}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
