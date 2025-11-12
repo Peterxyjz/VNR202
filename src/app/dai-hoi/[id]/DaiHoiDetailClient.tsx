@@ -249,7 +249,7 @@ export default function DaiHoiDetailClient({
             <div className="flex-1 h-1 bg-gradient-to-r from-red-200 to-transparent rounded-full" />
           </div>
 
-          <div className="bg-gradient-to-br from-white to-red-50 rounded-2xl shadow-xl p-8 border-l-4 border-yellow-500">
+          <div className="bg-gradient-to-br from-white to-red-50 rounded-2xl shadow-xl px-8 py-2 border-l-4 border-yellow-500">
             <div className="space-y-4">
               {daiHoi.fullContentSummary.map((paragraph, index) => (
                 <motion.div
