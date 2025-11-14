@@ -132,6 +132,12 @@ export default function DaiHoiDetailClient({
               <span className="text-2xl">📍</span>
               <span className="font-semibold">{daiHoi.location}</span>
             </div>
+            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
+              <span className="text-2xl">👤</span>
+              <span className="font-semibold">
+                Tổng Bí thư: {daiHoi.generalSecretary}
+              </span>
+            </div>
           </motion.div>
         </div>
 

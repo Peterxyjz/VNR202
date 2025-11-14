@@ -7,6 +7,7 @@ export interface DaiHoiData {
   title: string;
   time: string;
   location: string;
+  generalSecretary: string;
   heroImage: string;
   context: string[];
   contentHighlights: Array<{
@@ -30,7 +31,12 @@ export interface ContentData {
 
 // Đọc dữ liệu từ file JSON
 export function getContentData(): ContentData {
-  const filePath = path.join(process.cwd(), "src", "data", "vnr202_content.json");
+  const filePath = path.join(
+    process.cwd(),
+    "src",
+    "data",
+    "vnr202_content.json"
+  );
   const fileContents = fs.readFileSync(filePath, "utf8");
   return JSON.parse(fileContents);
 }
@@ -107,7 +113,12 @@ export interface ThemesData {
 
 // Đọc dữ liệu themes từ file JSON
 export function getThemesData(): ThemesData {
-  const filePath = path.join(process.cwd(), "src", "data", "vnr202_themes.json");
+  const filePath = path.join(
+    process.cwd(),
+    "src",
+    "data",
+    "vnr202_themes.json"
+  );
   const fileContents = fs.readFileSync(filePath, "utf8");
   return JSON.parse(fileContents);
 }
