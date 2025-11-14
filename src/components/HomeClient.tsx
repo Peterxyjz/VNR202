@@ -752,7 +752,7 @@ export default function HomeClient({ daiHoiList }: HomeClientProps) {
               whileTap={{ scale: 0.98 }}
             >
               <Link
-                href="/dong-chay-chu-de"
+                href="/dai-hoi"
                 className="group relative inline-block overflow-hidden rounded-2xl shadow-2xl"
               >
                 {/* Animated gradient background */}
@@ -795,7 +795,7 @@ export default function HomeClient({ daiHoiList }: HomeClientProps) {
                   </motion.span>
                   <div className="text-left">
                     <div className="text-white font-black text-xl tracking-wide">
-                      Dòng chảy Chủ đề
+                      Khám phá các kỳ đại hội
                     </div>
                     <div className="text-yellow-100 text-xs font-medium">
                       Xem sự phát triển qua các kỳ

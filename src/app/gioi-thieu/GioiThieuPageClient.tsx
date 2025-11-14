@@ -83,6 +83,26 @@ export default function GioiThieuPageClient() {
         "Tìm kiếm theo chủ đề dễ dàng",
       ],
     },
+    {
+      icon: (
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
+        />
+      ),
+      title: "AI Chatbot",
+      description:
+        "Trợ lý AI thông minh sử dụng Google Gemini để trả lời câu hỏi về lịch sử các Đại hội",
+      color: "cyan",
+      details: [
+        "Phản hồi nhanh chóng và chính xác",
+        "Dựa trên cơ sở tri thức chuyên sâu",
+        "Hỗ trợ tiếng Việt tự nhiên",
+        "Gợi ý câu hỏi thông minh",
+      ],
+    },
   ];
 
   const stats = [
@@ -193,7 +213,7 @@ export default function GioiThieuPageClient() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((feature, index) => (
               <div
                 key={index}

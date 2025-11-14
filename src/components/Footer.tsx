@@ -40,6 +40,7 @@ export default function Footer() {
         { href: "/quiz", label: "Quiz" },
         { href: "/forum", label: "Hỏi đáp" },
         { href: "/gioi-thieu", label: "Giới thiệu" },
+        { href: "/dong-chay-chu-de", label: "Dòng chảy Chủ đề" },
       ],
     },
     {
@@ -60,6 +61,7 @@ export default function Footer() {
         { href: "/gioi-thieu", label: "Về chúng tôi" },
         { href: "/lien-he", label: "Liên hệ" },
         { href: "/chinh-sach", label: "Chính sách" },
+        { href: "/dieu-khoan", label: "Điều khoản" },
         { href: "/huong-dan", label: "Hướng dẫn" },
       ],
     },
