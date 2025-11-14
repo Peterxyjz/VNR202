@@ -269,6 +269,72 @@ export default function GioiThieuPageClient() {
           </div>
         </div>
 
+        {/* Team Members Section */}
+        <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 mb-12">
+          <div className="flex items-start gap-4 mb-8">
+            <div className="w-1 h-16 bg-gradient-to-b from-red-600 to-blue-600 rounded-full"></div>
+            <div>
+              <h2 className="text-3xl font-bold text-gray-800 mb-2">
+                Thành viên nhóm
+              </h2>
+              <p className="text-red-600 font-semibold">
+                Nhóm phát triển dự án
+              </p>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              {
+                name: "Phan Tấn Phát",
+                code: "SE172573",
+                role: "Soạn nội dung, làm câu đố, thuyết trình đại hội VII và XI",
+              },
+              {
+                name: "Đỗ Quốc Cường",
+                code: "SE170588",
+                role: "Soạn nội dung, làm câu đố, thuyết trình đại hội XII và XIII",
+              },
+              {
+                name: "Nguyễn Phúc Điền",
+                code: "SE171952",
+                role: "Soạn nội dung, làm câu đố, thuyết trình đại hội IX và X",
+              },
+              {
+                name: "Nguyễn Quốc Phong",
+                code: "SE172516",
+                role: "Soạn nội dung, làm câu đố, thuyết trình đại hội VIII và trò chơi hoạt động kết",
+              },
+              {
+                name: "Lê Quang Huy",
+                code: "SE172573",
+                role: "Xây dựng và hoàn thiện website cho sản phẩm sáng tạo của nhóm",
+              },
+            ].map((member, index) => (
+              <div
+                key={index}
+                className="bg-gradient-to-r from-red-50 to-blue-50 p-6 rounded-xl hover:shadow-lg transition-shadow"
+              >
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-red-600 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
+                    {member.name.charAt(0)}
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-bold text-gray-800 text-lg mb-1">
+                      {member.name}
+                      {" - "}
+                      <span className="text-red-600">{member.code}</span>
+                    </h3>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      {member.role}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Technology Stack */}
         {/* <div className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl shadow-xl p-8 md:p-12 text-white mb-12">
           <h2 className="text-3xl font-bold mb-2 text-center">
