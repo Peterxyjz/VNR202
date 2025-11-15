@@ -9,7 +9,7 @@ TÀI LIỆU - VNR202: Các Đại hội Đảng (VII -> XIII)
 - Các điểm nổi bật theo từng kỳ: mục tiêu phát triển, chủ trương CNH-HĐH, mục tiêu xã hội và chính sách đối ngoại.
 - Ví dụ: Đại hội VII (1991) – Cương lĩnh 1991; Đại hội VIII (1996) – đẩy mạnh CNH-HĐH; Đại hội IX (2001) – mô hình kinh tế thị trường định hướng XHCN; v.v.
 
-Sử dụng tệp 'src/data/vnr202_content.json' để tra cứu chi tiết từng kỳ đại hội, thời gian, nội dung nổi bật và liên kết media.
+Sử dụng tệp 'src/data/vnr202.docx' để tra cứu chi tiết từng kỳ đại hội, thời gian, nội dung nổi bật và liên kết media.
 
 Gợi ý sử dụng:
 - Trả lời các câu hỏi liên quan đến lịch sử, ý nghĩa và nội dung chính của các Đại hội.

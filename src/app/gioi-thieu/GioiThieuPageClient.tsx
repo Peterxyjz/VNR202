@@ -287,7 +287,7 @@ export default function GioiThieuPageClient() {
             {[
               {
                 name: "Phan Tấn Phát",
-                code: "SE172573",
+                code: "SE170522",
                 role: "Soạn nội dung, làm câu đố, thuyết trình đại hội VII và XI",
               },
               {
